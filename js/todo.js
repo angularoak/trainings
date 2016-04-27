@@ -1,13 +1,7 @@
 var app = angular.module("myApp",[]);
 
 app.controller("todo",function($scope){
-    var tasks=[{
-        "desc":"Go to Training"
-    },{
-        "desc":"Learn Angular"
-    }, {
-        "desc":"Complete HTML,CSS"
-    }];
+    var tasks=[];
     function addTask(){
         $scope.errortext = "";
         if (JSON.stringify($scope.tasks).indexOf($scope.todoTask.desc) == -1) {
@@ -15,6 +9,7 @@ app.controller("todo",function($scope){
         } else {
             $scope.errortext = "The Task is already in your Todo List.";
         }       
+        
         $scope.todoTask={};
     };
 
