@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="mytrail">
+  <head>
+      <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css"/>
+    </head>
+  <body>
+       
+          <h3>Your personal info</h3>
+      <p><pre>Manage this basic information — your name, email, and 
+      phone number — to help others find you on Google products 
+      like Hangouts, Gmail, and Maps, and make it easier to get in touch</pre></p>
+      
+    <div ng-controller="myController">
+    <br>
+    <label>Name:</label>
+    <input type="text" ng-model="Name" placeholder="Enter a name here">
+        
+        {{Name}}
+        
+         <div>Email: {{privacyDetails.Email}}</div>
+          <div>Phn: {{privacyDetails.Phn}}</div>
+          <div>Birthday: {{privacyDetails.Birthday}}</div>
+          <div>Gender: {{privacyDetails.Gender}}</div>
+    </div>
+    
+    <div ng-controller="myController2">
+      <label>UserName:</label>
+        <input type="text" ng-model="UserName" placeholder="Enter here">
+      
+{{UserName}}
+    </div>
+    
+    <script src="../../js/angular.js"></script>  
+    <script src="js/trail1.js"></script>  
+  </body>
+</html>
