@@ -1,0 +1,48 @@
+<!doctype html>
+<html ng-app="fbEx">
+  <head>
+      <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+       <link rel="stylesheet" href="css/fbstyle.css"/>
+    </head>
+  <body class="container">
+      
+      <div class="header">
+          <b>FACEBOOK</b>
+          <div id="move">
+          <form> Email/Phn:<span> <input type="text" name="email/phn"><span>
+                 Password:<span> <input type="text" name="password"><span>
+                 <input type="submit" value="signin">
+        </form>
+           </div>
+      </div>
+             <div id="leftbar">
+                  <h4>search by name</h4><br>
+                  <input type="text" name="fname" placeholder="First name"><br>
+              </div>  
+              
+      
+      <div class="section">
+          
+    <div ng-controller="myway">
+        <ul style="list-style-type:none" ng-repeat="friend in friends">
+         <img ng-src="{{friend.imageUrl}}"/>
+        <li>{{friend.FirstName}}</li>
+        <li>{{friend.LastName}}</li>
+        <li><a target="_blank" ng-href="{{friend.University}}">{{friend.Studies}}</a></li>
+        <li><a target="_blank" ng-href="{{user.twitterUrl}}">{{user.FirstName}}    {{user.LastName}}</a></li></span>
+      </ul>
+   
+          </div></div>
+              
+              <div id="rightbar">
+              <b>empty</b></div>
+              
+        
+              
+              
+      <script src="../../js/angular.js"></script>
+      <script src="js/fbtrail.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </body>
+</html>

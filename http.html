@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="http">
+    <head>
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+    </head>
+    <body class="container">
+        <div ng-controller="productsDetails">
+            <h3>Http Example</h3>
+<div class="error">{{httpError}}</div>
+            <table class="table table-bordered" ng-if="products.length>0">
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>SupplierID</th>
+                        <th>QuantityPerUnit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="product in products">
+                        <td>{{product.ProductName}}</td>
+                        <td>{{product.SupplierID}}</td>
+                        <td>{{product.QuantityPerUnit}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="js/angular.js"></script>
+        <script src="js/http.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </body>
+</html>
