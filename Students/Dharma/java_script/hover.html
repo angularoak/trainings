@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+    jQuery hover
+    </title>
+    <link rel="stylesheet" href="css/hover.css">
+    </head>
+    <body>
+        <dl>
+        <dt>dharma what are your hours</dt>
+        <dd>we work 24/7..</dd>
+        <dt>mohan what are your hours</dt>
+        <dd>we work 24/7..</dd>
+        <dt>madhu what are your hours</dt>
+        <dd>we work 24/7..</dd>
+        <dt>srinu what are your hours</dt>
+        <dd>we work 24/7..</dd>
+        <dt>jagan what are your hours</dt>
+        <dd>we work 24/7..</dd>
+        </dl>
+    <script src="jquery/jquery-2.2.3.js"></script>
+        <script>
+              (function(){
+                  var dd=$('dd');
+                 // dd.hide();
+                  //dd.fadeIn(5000);
+                  //dd.slideUp(5000);
+                  dd.hide();
+                  $('dt').hover(function(){
+                      var funky=$(this).next();
+                      funky.siblings('dd').hide();
+                      funky.show();
+                  })
+              })();
+        </script>
+    </body>
+</html>

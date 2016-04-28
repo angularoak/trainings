@@ -1,0 +1,22 @@
+body{
+    
+    width: 500px;
+    margin: auto;
+    text-align: center
+}
+dl{
+    
+}
+dd{
+    margin: 0;
+    padding: 1em 0;
+    
+}
+dt{
+    cousor:pointer;
+    font-weight: bold;
+    line-height: 2em;
+    background: gray;
+    border-bottom: 1px solid gray;
+   border-top: 2px solid white;
+}

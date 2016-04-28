@@ -1,0 +1,150 @@
+body {
+	background: url(../images/bg-body.jpg);
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+img {
+	border: 0;
+}
+#header {
+	background: url(../images/bg-header.jpg);
+	height: 160px;
+}
+
+
+#header > div {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+	text-align: right;
+}
+
+#logo {
+    float: left;
+}
+#navigation {
+	display: inline-block;
+	line-height: 150px;
+	list-style: none;
+	width: 510px;
+	margin: 0;
+	padding: 0;
+}
+#navigation li {
+	float: left;
+	width: 102px;
+	text-align: center;
+}
+#navigation li a {
+	color: #9b660b;
+	line-height: 60px;
+	text-decoration: none;
+	text-shadow: -2px 2px 1px #000;
+}
+#navigation li a:hover, #navigation li.selected a {
+	color: #e29b1f;
+}
+
+#contents {
+	background: #fff7db url(../images/content-border.jpg) repeat-x left bottom;
+	min-height: 1080px;
+	padding-bottom: 15px;
+}
+
+
+#contents >div {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+#contents p {
+	color: #aa9387;
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0 auto;
+	padding: 0 0 24px;
+	text-align: justify;
+}
+
+#contents p a {
+	color: #aa9387;
+}
+#contents a:hover {
+	color: #ce8763;
+}
+
+#contents div#adbox {
+	margin-bottom: 36px;
+	padding: 0;
+	text-align: center;
+}
+#adbox img {
+	margin-bottom: 24px;
+}
+#adbox p {
+	width: 600px;
+	text-align: center;
+	text-indent: 40px;
+}
+#contents div#featured {
+	background: url(../images/bg-featured.png) no-repeat center top;
+	width: 100%;
+	margin-bottom: 60px;
+	padding: 30px 0 24px;
+	text-align: center;
+}
+#featured ul {
+	display: inline-block;
+	list-style: none;
+	width: 960px;
+	margin: 0;
+	padding: 0;
+}
+#featured ul li {
+	float: left;
+	width: 300px;
+	margin: 0 10px;
+}
+#featured p {
+	padding: 0;
+	text-align: center;
+}
+
+#footer {
+	background: url(../images/bg-footer.png) repeat-x center bottom;
+	padding: 18px 0 30px;
+}
+#connect {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 0 30px;
+	text-align: center;
+}
+#connect a {
+	background: url(../images/icons.png) no-repeat;
+	display: inline-block;
+	height: 39px;
+	width: 40px;
+	margin: 0 20px;
+}
+#connect a.facebook {
+	background-position: 0 0;
+}
+#connect a.email {
+	background-position: 0 -49px;
+}
+#connect a.twitter {
+	background-position: 0 -98px;
+}
+#connect a.googleplus {
+	background-position: 0 -147px;
+}
+#footer p {
+	color: #956836;
+	font-size: 13px;
+	line-height: 24px;
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}

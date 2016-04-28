@@ -1,0 +1,227 @@
+#header {
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+
+#logo {
+	float: left;
+	margin-bottom: 20px;
+	margin-left: 49px;
+}
+
+#navigation {
+	background: url(../images/bg-navigation.png) no-repeat;
+	clear: both;
+	height: 50px;
+	width: 860px;
+	margin: 0 auto;
+	padding: 1px;
+}
+#navigation ul {
+	display: inline-block;
+	width: 860px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#navigation li {
+	float: left;
+	background-position: 0 -118px;
+	background-repeat: no-repeat;
+	height: 49px;
+	width: 122px;
+	margin: 0;
+	padding-left: 1px;
+	text-align: center;
+}
+#navigation li:first-child {
+	background: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+#navigation li a {
+	color: #fff;
+	display: block;
+	font: bold 14px/48px Arial, Helvetica, sans-serif;
+	height: 49px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#navigation li a:hover {
+	background-position: 0 -59px;
+	color: #6d6157;
+}
+#navigation li.selected a {
+	background-position: 0 0;
+	color: #e4e1bd;
+}
+#adbox img{
+        padding-left: 26%;
+}
+   
+}
+
+#contents {
+	display:inline-block;
+	width: 865px;
+	padding: 0 47px;
+}
+#contents h1 {
+	color: #316e66;
+	font: 26px/30px "Times New Roman", Times, serif;
+	margin: 18px 0 20px;
+	padding-left: 2px;
+	text-transform: uppercase;
+}
+
+.box_1 {
+	display: inline-block;
+	width: 865px;
+	padding: 0 47px;
+}
+
+.box_1 h1 {
+	color: #316e66;
+	font: 26px/30px "Times New Roman", Times, serif;
+	margin: 18px 0 20px;
+	padding-left: 2px;
+	text-transform: uppercase;
+}
+#contents p {
+	color: #5a4535;
+	font-size: 15px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 0 24px 2px;
+}
+
+#testimonials h1{
+    color: #316e66;
+	font: 26px/30px "Times New Roman", Times, serif;
+	margin: 18px 0 20px;
+	padding-left: 40px;
+	text-transform: uppercase;
+    
+}
+
+#sidebar {
+	
+	height: auto;
+	width: 285px;
+}
+#sidebar div.section {
+    float: none;
+	height: 180px;
+	margin-bottom: 12px;
+}
+#sidebar div.section:first-child {
+	padding: 2%;
+}
+
+#sidebar div.section > a:hover {
+	filter:alpha(opacity=60);
+	opacity: 0.6;
+}
+
+
+#footer {
+	color: #594334;
+	font-size: 14px;
+	line-height: 48px;
+	margin: -38px 0 20px;
+	padding-top: 42px;
+	text-transform: uppercase;
+}
+#footer > div {
+	background-color: #ac9e94;
+	height: 48px;
+	width: 822px;
+	border-bottom: 1px solid #72675f;
+	border-top: 1px solid #cdbeb2;
+	margin: 0 auto;
+	padding: 0 20px;
+	text-align: right;
+}
+#footer ul.navigation {
+	float: left;
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#footer ul.navigation li {
+	float: left;
+	margin-right: 10px;
+}
+#footer ul.navigation li a {
+	color: #594334;
+	padding: 0 5px;
+	text-decoration: none;
+}
+#footer ul.navigation li:first-child a {
+	border-left: 0;
+	padding-left: 0;
+}
+#footer ul.navigation li a:hover {
+	color: #eee7c3;
+}
+#footer ul.navigation li.active a {
+	color: #fff;
+}
+#footer p {
+	margin: 0;
+	text-align: center;
+	text-transform: none;
+}
+
+
+#contact form {
+	float: right;
+	color: #5a4535;
+	height: 320px;
+	width: 420px;
+	border: 1px solid #5a4535;
+	padding: 19px 19px 6px;
+}
+#contact form table {
+	border-collapse: collapse;
+}
+#contact form table td {
+	padding-bottom: 6px;
+}
+#contact table td:first-child {
+	font-size: 14px;
+	line-height: 30px;
+	width: 180px;
+	text-transform: uppercase;
+}
+#contact table td.txtarea {
+	vertical-align: top;
+}
+#contact form input {
+	height: 17px;
+	line-height: 17px;
+	width: 278px;
+	border: 1px solid #5a4535;
+	border-radius: 2px;
+}
+#contact textarea {
+	height: 143px;
+	line-height: 17px;
+	width: 338px;
+	border: 1px solid #5a4535;
+	border-radius: 2px;
+	overflow: auto;
+	resize: none;
+}
+#contact input.btn {
+	cursor: pointer;
+	height: 26px;
+	width: 60px;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+#contact input.btn:hover {
+	background-position: 0 0;
+}

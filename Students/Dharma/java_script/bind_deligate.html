@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+    Bind & Deligates
+    </title>
+     </head>
+    <body>
+        <div class="container">
+        <h1>Click Me</h1>
+        <h2>click me 1</h2>
+        <h2>click me 2</h2>
+
+        </div>
+            <script src="jquery/jquery-2.2.3.js"></script>
+        <script>
+        (function(){
+            //click event handlar
+            //---------------------
+           // $('h1').click(function(){
+              // console.log('text clicked');
+            //bind event handelar
+            //-----------------
+              //  $('h2').bind('click',function(){
+              // console.log('text clicked');
+              // $(this).clone(true).appendTo('body');
+                    //deligate event handelar
+                    //---------------
+            
+               $('div.container').delegate('h2','click',function(){
+   console.log('text clicked');
+   $(this).clone(true).appendTo('.container');
+            });
+        })();
+        </script>
+    </body>
+   
+</html>  

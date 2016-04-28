@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+   adding_contant_to_dom
+    </title>
+     </head>
+    <body>
+        <artical>
+            <h3>dharmendhar</h3>
+        <h1>my awsome post</h1>
+        <p>Rockwell Industry PVT LTD is one of the leading manufacturers of the larger range of cold chain equipments in the country. Its appliance is one of the world class products which have been created after extensive research on customer requirements and suitable design by well experiences engineers. It has been designed to satisfy all requirements and at the same time delight with benefits no one ever thought of like, superior quality components for greater duration and reliability, ozone friendly gas, instead of chloro flora carbon (CFC).</p>
+        <p>Rockwell Industry PVT LTD is one of the leading manufacturers of the larger range of cold chain equipments in the country. Its appliance is one of the world class products which have been created after extensive research on customer requirements and suitable design by well experiences engineers. It has been designed to satisfy all requirements and at the same time delight with benefits no one ever thought of like, superior quality components for greater duration and reliability, ozone friendly gas, instead of chloro flora carbon (CFC).
+            </p>
+            </artical>
+    <script src="jquery/jquery-2.2.3.js"></script>
+        <script>
+        (function(){
+  $('artical').append('appended at last');
+  $('artical').prepend('appended at first');
+  $('h1').after('appended after h1 tag');
+   //insurting dynamically 
+  //---------------------
+        $('<h2></h2>',{
+            text:'hello from java script',
+            class:'myclass'
+        }).insertAfter('h1');
+        })();
+            //dynamically posisaning 
+            //----------------------
+            $('h3').appendTo('artical');
+            $('p').eq(1).after($('h1'));
+        </script>
+    </body>
+   
+</html>
