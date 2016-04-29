@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="localStorage">
+  <head>
+      <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+    </head>
+  <body class="container">
+    <div ng-controller="todo" ng-init="name='raj'" >
+      <h3>Todo with Local Storage Example</h3>
+    
+        <div class="input-group">
+      <input type="text" class="form-control" ng-model="todoTask.desc" placeholder="Add Task desc">
+      <span class="input-group-btn">
+        <button class="btn btn-default" ng-click="addTask()" type="button">Add</button>
+      </span>
+    </div><!-- /input-group -->
+  <ul class="list-group" ng-show="tasks.length>0">
+      <a href="#" class="list-group-item active">Todo List</a>
+      <li class="list-group-item" ng-repeat="task in tasks" ng-bind="task.desc"></li>
+  </ul>
+         
+</div>
+      <script src="js/angular.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/ngstorage/0.3.6/ngStorage.min.js"></script>
+      <script src="js/localStorage.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </body>
+</html>
