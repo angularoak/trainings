@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="http1">
+    <head>
+        <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css"/>
+    </head>
+    <body class="container">
+        <div ng-controller="ordersDetails">
+            <h3>Http1 Example</h3>
+            
+            <table class="table table-bordered" ng-if="Orders.length>0">
+                <thead>
+                    <tr>
+                        <th>OrderID</th>
+                        <th >CustomerID</th>
+                        <th>EmployeeID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="Order in Orders">
+        <td>{{Order.OrderID}}</td>
+        <td>{{Order.CustomerID}}</td>
+        <td>{{Order.EmployeeID}}</td>
+        </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <script src="../../js/angular.js"></script>
+        <script src="js/http1.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </body>
+</html>

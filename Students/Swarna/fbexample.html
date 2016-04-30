@@ -1,0 +1,37 @@
+<!doctype html>
+<html ng-app="mytrail2">
+  <head>
+      <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+       <link rel="stylesheet" href="css/fb.css"/>
+    </head>
+  <body class="container">
+      
+      <div class="header">
+          <b>FACEBOOK</b>
+          <div id="move">
+          <form> Email/Phn:<span> <input type="text" name="email/phn"><span>
+                 Password:<span> <input type="text" name="password"><span>
+                 <input type="submit" value="signin">
+        </form>
+           </div>
+      </div>
+              
+      
+      <div class="section">
+          
+    <div ng-controller="myway">
+        <ul style="list-style-type:none" ng-repeat="friend in friends">
+         <img ng-src="{{friend.imageUrl}}"/>
+        <li>{{friend.FirstName}}</li>
+        <li>{{friend.LastName}}</li>
+        <li><a target="_blank" ng-href="{{friend.University}}">{{friend.Studies}}</a></li>
+        <li><a target="_blank" ng-href="{{user.twitterUrl}}">{{user.FirstName}}    {{user.LastName}}</a></li></span>
+      </ul>
+   
+          </div></div>             
+      <script src="../../js/angular.js"></script>
+      <script src="js/fb2.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </body>
+</html>
