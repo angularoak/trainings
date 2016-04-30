@@ -9,6 +9,18 @@ function Sucess(response) {
    };
    
     $http.get("http://services.odata.org/V4/Northwind/Northwind.svc/Products").then(Sucess,faliure);
+    
+    function searchHearFunction(value){
+        console.log(value.ProductName);
+        value.ProductName ="Buses";
+        console.log(value.ProductName);
+        
+    
+    }
+    $scope.searchHear = searchHearFunction;
+    $scope.getDetailsOfProduct= function(value){
+        $scope.prodName= value.ProductName
+    }
      /*var productsDetails=$http.get("http://services.odata.org/V4/Northwind/Northwind.svc/Products");
     productsDetails.success(Sucess);
     productsDetails.error(faliure);

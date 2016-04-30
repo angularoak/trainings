@@ -6,6 +6,7 @@
     font-size:40px;
     width:100%;
     padding:5px;
+    
     }
 #move{
     background-color:darkblue;
@@ -29,12 +30,13 @@
 .section {
     background-color:lightgoldenrodyellow;
     text-decoration-color: black;
-    width:60%;
+    text-align: left;
+    width: 100%;
     height:100%
     align:center;
     float-right:40%;
     float-left:40%;
-    padding:15%;	 	 
+    padding:10%;	 	 
 }
 #rightbar{
      line-height:17%;
@@ -44,4 +46,10 @@
     
     float:right;
     padding:3%;
+}
+
+#image{
+width:80%;
+float:right;
+
 }

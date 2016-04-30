@@ -5,25 +5,30 @@
     </head>
     <body class="container">
         <div ng-controller="productsDetails">
-            <h3>Http Example</h3>
+            <h3>Http Example</h3><input ng-model="sortByYourPrefernce" > 
 <div class="error">{{httpError}}</div>
+<h1>Product Name {{prodName}}</h1>
+            <input type="checkbox" ng-model="orderBydescAsc">Sort {{sortByYourPrefernce}}<br>
             <table class="table table-bordered" ng-if="products.length>0">
                 <thead>
                     <tr>
                         <th>Product Name</th>
-                        <th>SupplierID</th>
+                        <th >Price</th>
                         <th>QuantityPerUnit</th>
+                        <th>Edit</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="product in products">
-                        <td>{{product.ProductName}}</td>
-                        <td>{{product.SupplierID}}</td>
-                        <td>{{product.QuantityPerUnit}}</td>
+                    <tr ng-repeat="product in products | orderBy:sortByYourPrefernce:orderBydescAsc">
+        <td ng-click="getDetailsOfProduct(product)">{{product.ProductName}}</td>
+        <td>{{product.SupplierID |currency }}</td>
+        <td>{{product.QuantityPerUnit}}</td>
+        <td><button ng-click="searchHear(product)">Edit</button></td>
                     </tr>
                 </tbody>
             </table>
         </div>
+        
         <script src="js/angular.js"></script>
         <script src="js/http.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
