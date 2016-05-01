@@ -1,6 +1,6 @@
 var app = angular.module("http1",[]);
 
-app.controller("ordersDetails",function($scope,$http1){
+app.controller("ordersDetails",function($scope,$http){
 function Sucess(response) {
     $scope.orders = response.data.value;
     };

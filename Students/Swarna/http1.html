@@ -6,20 +6,20 @@
     <body class="container">
         <div ng-controller="ordersDetails">
             <h3>Http1 Example</h3>
-            
-            <table class="table table-bordered" ng-if="Orders.length>0">
+            <table class="table table-bordered" ng-if="orders.length>0">
                 <thead>
                     <tr>
-                        <th>OrderID</th>
-                        <th >CustomerID</th>
-                        <th>EmployeeID</th>
+                 <th><button  ng-click="myFun('OrderID')"  >OrderID</button></th>
+                <th ><button  ng-click="myFun('CustomerID')">CustomerID</button></th>
+                 <th><button  ng-click="myFun('EmployeeID')">EmployeeID</button></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="Order in Orders">
-        <td>{{Order.OrderID}}</td>
-        <td>{{Order.CustomerID}}</td>
-        <td>{{Order.EmployeeID}}</td>
+                    <tr ng-repeat="order in orders | orderBy:myOrderBy">
+                        
+        <td>{{order.OrderID}}</td>
+        <td>{{order.CustomerID}}</td>
+        <td>{{order.EmployeeID}}</td>
         </tr>
                 </tbody>
             </table>
