@@ -1,4 +1,4 @@
-var app = angular.module("http1",[]);
+var app = angular.module("http",[]);
 
 app.controller("ordersDetails",function($scope,$http){
 function Sucess(response) {
@@ -13,14 +13,16 @@ function Sucess(response) {
     function searchHearFunction(value){
         console.log(value.CustomerID);
         }
-    $scope.searchHear = searchHearFunction;
-    $scope.getDetailsOfProduct= function(value){
-        $scope.CustName= value.CustomerID
-    }
+     function myorderby(value1){
+       $scope.flag=true;
+       $scope.myorderby=function(){
+           $scope.flag=!$scope.flag;
+       }}
+  
      /*var productsDetails=$http.get("http://services.odata.org/V4/Northwind/Northwind.svc/Products");
     productsDetails.success(Sucess);
     productsDetails.error(faliure);
     
 $http.get("http://services.odata.org/V4/Northwind/Northwind.svc/Products").success(Sucess).error(faliure);*/
 
-})
+});

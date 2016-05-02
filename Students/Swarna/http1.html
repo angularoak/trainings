@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="http1">
+<html ng-app="http">
     <head>
         <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css"/>
     </head>
@@ -9,13 +9,13 @@
             <table class="table table-bordered" ng-if="orders.length>0">
                 <thead>
                     <tr>
-                 <th><button  ng-click="myFun('OrderID')"  >OrderID</button></th>
-                <th ><button  ng-click="myFun('CustomerID')">CustomerID</button></th>
-                 <th><button  ng-click="myFun('EmployeeID')">EmployeeID</button></th>
+                 <th><button  ng-click="myorderby">OrderID</button></th>
+                <th ><button  ng-click="myorderby">CustomerID</button></th>
+                 <th><button  ng-click="myorderby()">EmployeeID</button></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="order in orders | orderBy:myOrderBy">
+                    <tr ng-repeat="order in orders|orderBy:'EmployeeID'">
                         
         <td>{{order.OrderID}}</td>
         <td>{{order.CustomerID}}</td>
@@ -27,6 +27,7 @@
         
         <script src="../../js/angular.js"></script>
         <script src="js/http1.js"></script>
+    
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </body>
