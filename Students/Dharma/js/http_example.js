@@ -18,3 +18,4 @@ function Sucess(response) {
     $scope.getDetailsOfProduct= function(value){
         $scope.CustName= value.CustomerID
     }
+});

@@ -1,12 +1,12 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="http_example">
   <head>
       <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css"/>
     </head>
   <body>
       <form class="container">
       <div ng-controller="OrderDetails">
-          <table class="table table-bordered" ng-if="order.length>0">
+          <table class="table table-bordered" ng-if="orders.length>0">
           <thead>
               <tr>
 <th><button ng-click="OrdersFunction('OrderId')">OrderId</button></th>
@@ -15,10 +15,10 @@
               </tr>
               </thead>
               <tbody>
-              <tr ng-repeat="Ordre in Order | OrderBy:MyOrderBy">
+              <tr ng-repeat="order in orders | orderBy:OrderID">
                   <td>{{order.OrderID}}</td>
-                  <td>{{order.CustomarId}}</td>
-                  <td>{{order.EmployeeId}}</td>
+                  <td>{{order.CustomerID}}</td>
+                  <td>{{order.EmployeeID}}</td>
                           
                   </tr>
               </tbody>

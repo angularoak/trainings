@@ -6,16 +6,17 @@
     <body class="container">
         <div ng-controller="ordersDetails">
             <h3>Http1 Example</h3>
+             <input type="checkbox" ng-model="orderBydescAsc">Sort 
             <table class="table table-bordered" ng-if="orders.length>0">
                 <thead>
                     <tr>
-                 <th><button  ng-click="myFun('OrderID')"  >OrderID</button></th>
-                <th ><button  ng-click="myFun('CustomerID')">CustomerID</button></th>
-                 <th><button  ng-click="myFun('EmployeeID')">EmployeeID</button></th>
+                 <th><button  ng-click="myOrderBy='OrderID'"  >OrderID</button></th>
+                <th ><button  ng-click="myOrderBy='CustomerID'" >CustomerID</button></th>
+                 <th><button  ng-click="myOrderBy='EmployeeID'">EmployeeID</button></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="order in orders | orderBy:myOrderBy">
+                    <tr ng-repeat="order in orders | orderBy:myOrderBy:orderBydescAsc">
                         
         <td>{{order.OrderID}}</td>
         <td>{{order.CustomerID}}</td>
