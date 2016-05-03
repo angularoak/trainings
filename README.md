@@ -2,6 +2,10 @@ This is a Angular trainging repository
 
 to get the repository follow these steps
 
+Create an empty Folder
+
+Open folder and right click->git bash it should open a command line tool
+
 git init
 
 git remote add origin https://github.com/angularoak/trainings.git
