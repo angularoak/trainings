@@ -4,8 +4,14 @@
       <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css"/>
     </head>
   <body>
+    
       <form class="container">
+          
       <div ng-controller="OrderDetails">
+           <input type="button" value="sort" ng-click="ButtonClick()" />
+     <br />
+    <br />
+    <span ng-bind="Message"></span>
           <table class="table table-bordered" ng-if="orders.length>0">
           <thead>
               <tr>

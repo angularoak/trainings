@@ -18,4 +18,9 @@ function Sucess(response) {
     $scope.getDetailsOfProduct= function(value){
         $scope.CustName= value.CustomerID
     }
+    
+    
+    $scope.ButtonClick = function () {
+            $scope.Message = " sorted....."
+        }
 });
