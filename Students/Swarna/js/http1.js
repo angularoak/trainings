@@ -12,13 +12,12 @@ function Sucess(response) {
     
     function searchHearFunction(value){
         console.log(value.CustomerID);
-        }
-     function myorderby(value1){
-       $scope.flag=true;
-       $scope.myorderby=function(){
-           $scope.flag=!$scope.flag;
-       }}
-  
+    }
+    
+     $scope.myorderby=function(){
+       $scope.flag=!$scope.flag;
+       $scope.myorderby='OrderID'
+     }
      /*var productsDetails=$http.get("http://services.odata.org/V4/Northwind/Northwind.svc/Products");
     productsDetails.success(Sucess);
     productsDetails.error(faliure);
