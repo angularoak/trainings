@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="routingExample">
+  <head>
+      <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    </head>
+  <body>
+      <nav class="navbar navbar-default">
+  <div class="container-fluid">
+<!-- Brand and toggle get grouped for better mobile display ->   <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#controller">controller</a></li>
+        <li><a href="#http">http</a></li>         
+        <li><a href="#localStorage">localStorage</a></li>
+        <li><a href="#modelExample">modelExample</a></li>
+        <li><a href="#ngReaptExample">ngReaptExample</a></li>
+        <li><a href="#todo">todo</a></li>
+          </ul>
+      </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+            <div ng-view></div>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular/angular-route.js"></script>
+        <script src="js/routing.js"></script>  
+      
+    </body>
+</html>

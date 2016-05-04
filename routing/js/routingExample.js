@@ -13,7 +13,8 @@ app.config(
     when('/contact', {
         templateUrl: 'templates/contactUs.html',
         controller: 'contactController'
-      }).when('/orders', {
+      }).
+    when('/orders', {
         templateUrl: 'templates/orders.html',
         controller: 'ordersController'
       }).
