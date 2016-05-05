@@ -1,0 +1,19 @@
+
+  <body class="container">
+    <div ng-controller="todo" ng-init="name='raj'" >
+      <h3>Todo Example</h3>
+    
+        <div class="input-group">
+      <input type="text" class="form-control" ng-model="todoTask.desc" placeholder="Add Task desc">
+      <span class="input-group-btn">
+        <button class="btn btn-default" ng-click="addTask()" type="button">Add</button>
+      </span>
+    </div><!-- /input-group -->
+  <ul class="list-group" ng-show="tasks.length>0">
+      <a href="#" class="list-group-item active">Todo List</a>
+      <li class="list-group-item" ng-repeat="task in tasks" ng-bind="task.desc"></li>
+  </ul>
+         
+</div>
+     
+    </body>

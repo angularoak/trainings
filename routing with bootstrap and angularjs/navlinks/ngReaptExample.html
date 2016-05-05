@@ -1,0 +1,23 @@
+    <body class="container">
+        <div ng-controller="userDetails">
+            <h3>ng-repeat Example</h3>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Country</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="person in persons">
+                        <td>{{person.Name}}</td>
+                        <td>{{person.Country}}</td>
+                        <td><a target="_blank" ng-href="https://en.wikipedia.org/wiki/{{person.City}}">{{person.City}}</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </body>

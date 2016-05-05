@@ -12,7 +12,7 @@ function Sucess(response) {
     
     function searchHearFunction(value){
         console.log(value.ProductName);
-        value.ProductName =value.ProductName +"Edited";
+        value.ProductName ="Buses";
         console.log(value.ProductName);
         
     
