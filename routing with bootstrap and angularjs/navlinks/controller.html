@@ -1,10 +1,4 @@
-<!doctype html>
-<html ng-app="myApp">
-  <head>
-      <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.css"/>
-    </head>
-  <body>
-      <div ng-controller="SecondaryController">
+<div ng-controller="SecondaryController">
       <label>Name:</label>
       <input type="text" ng-model="userName" placeholder="Enter a name here">
         {{userName}}
@@ -17,13 +11,4 @@
         <div>First Name: {{person.FirstName}}</div>
         <div>Last Name: {{person.LastName}}</div>
       <img ng-src="{{person.imageUrl}}"/>
-      </div>
-      
-      
-      
-       
-     <script src="/lib/angular/angular.js"></script>
-        <script src="/js/controller.js"></script>  
-      
-    </body>
-</html>
+</div>

@@ -7,8 +7,7 @@ function Sucess(response) {
    function faliure(error){
        $scope.httpError="Somthing Went wrong please contact Admin"
    };
-   
-    $http.get("http://services.odata.org/V4/Northwind/Northwind.svc/Orders").then(Sucess,faliure);
+   $http.get("http://services.odata.org/V4/Northwind/Northwind.svc/Orders").then(Sucess,faliure);
     
     function searchHearFunction(value){
         console.log(value.CustomerID);

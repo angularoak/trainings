@@ -19,13 +19,15 @@
               
       
       <div class="section">
-          
+          <a href="http://google.com">Google search</a>
     <div ng-controller="myway">
         <ul style="list-style-type:none" ng-repeat="friend in friends">
          <img ng-src="{{friend.imageUrl}}"/>
             <div id="image">
         <li>{{friend.FirstName}} {{friend.LastName}}</li>
-        <li><a target="_blank" ng-href="{{friend.University}}">{{friend.Studies}}</a></li>
+        <li><a target="_blank" ng-href="{{friend.University}}">{{friend.Studies}}
+            </a>
+                </li>
         <li><a target="_blank" ng-href="{{user.twitterUrl}}">{{user.FirstName}}    {{user.LastName}}</a></li></span>
       </ul>
    
