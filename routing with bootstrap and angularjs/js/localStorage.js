@@ -1,6 +1,6 @@
 var app = angular.module("localStorage",["ngStorage"]);
 //http://www.allaboutrajni.com/
-app.controller("todo",function($scope,$localStorage, $sessionStorage){
+app.controller("localStoragetodo",function($scope,$localStorage, $sessionStorage){
     
     if($localStorage.tasks==undefined)
     $localStorage.tasks=[];
