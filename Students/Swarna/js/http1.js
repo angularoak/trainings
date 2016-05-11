@@ -15,7 +15,7 @@ function Sucess(response) {
     
      $scope.myorderby=function(){
        $scope.flag=!$scope.flag;
-       $scope.myorderby='OrderID'
+       $scope.myorderby='CustomerID';
      }
      /*var productsDetails=$http.get("http://services.odata.org/V4/Northwind/Northwind.svc/Products");
     productsDetails.success(Sucess);

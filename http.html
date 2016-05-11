@@ -19,7 +19,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="product in products | orderBy:sortByYourPrefernce:orderBydescAsc">
+                 <tr ng-repeat="product in products | orderBy:sortByYourPrefernce:orderBydescAsc">
         <td ng-click="getDetailsOfProduct(product)">{{product.ProductName}}</td>
         <td>{{product.SupplierID |currency }}</td>
         <td>{{product.QuantityPerUnit}}</td>
