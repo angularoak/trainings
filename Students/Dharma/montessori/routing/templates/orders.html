@@ -1,0 +1,19 @@
+<h5>{{Message}}</h5>
+
+            <table class="table table-bordered" ng-if="orders.length>0">
+                <thead>
+                    <tr>
+                <th><button  ng-click="myorderby('OrderID')" >OrderID</button></th>
+                <th ><button  ng-click="myorderby('CustomerID')" >CustomerID</button></th>
+                 <th><button  ng-click="myorderby('EmployeeID')">EmployeeID</button></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="order in orders | orderBy:myorderby:flag">
+                        
+        <td>{{order.OrderID}}</td>
+        <td>{{order.CustomerID}}</td>
+        <td>{{order.EmployeeID}}</td>
+        </tr>
+                </tbody>
+            </table>
