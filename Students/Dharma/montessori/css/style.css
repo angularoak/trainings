@@ -1,1 +1,84 @@
-.centered-navbar {position:absolute; left:25%; width:50%; text-align:center;}
+.features-wrapper.index-1 .feature-outer {
+    height: 350px;
+}
+.features-wrapper.index-1 .feature-outer .feature {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 34px;
+    background: url(../img/separators/sep-double-gray.png) bottom center no-repeat;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+.features-wrapper.index-1 .feature-outer .feature.color-1 .icon {
+    background: #55b5bd;
+}
+
+
+:hov
+
+
+.cls
+
+.features-wrapper.index-1 .feature-outer .feature .icon:before {
+    background: #ffffff;
+    content: "";
+    height: 100px;
+    left: -105px;
+    opacity: 0;
+    position: absolute;
+    top: 130px;
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+    -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 195px;
+    z-index: 1;
+}
+
+.features-wrapper.index-1 .feature-outer .feature .icon img {
+    position: absolute;
+    top: 13.5%;
+    left: 13.5%;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h5, h6, p, a, ul, ol, span, q, blockquote, img {
+    margin: 0 0;
+    padding: 0 0;
+}
+.features-wrapper.index-1 .feature-outer .feature.color-1 .icon::after {
+    border: 1px dashed #55b5bd;
+}
+.features-wrapper.index-1 .feature-outer .feature .icon::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 178px;
+    height: 178px;
+    top: -14px;
+    left: -14px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.features-wrapper.index-1 .feature-outer .feature p {
+    -webkit-transition: all 0.35s ease, max-height 0.6s ease;
+    transition: all 0.35s ease, max-height 0.6s ease;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+    max-height: 0;
+    opacity: 0;
+    -webkit-transform: translateY(-25px);
+    -ms-transform: translateY(-25px);
+    transform: translateY(-25px);
+}
