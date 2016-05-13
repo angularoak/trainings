@@ -216,3 +216,186 @@ h1, h2, h3, h4, h5, h5, h6, p, a, ul, ol, span, q, blockquote, img {
  .about-wrapper.index-1.tab-content.tab-pane{
         padding-bottem: 80px;
 }
+
+
+
+
+
+/*........news......*/
+
+
+news-wrapper.index-1 {
+    background: url(../img/backgrounds/background-2.jpg) 45%;
+    padding: 100px 0 85px;
+}
+
+.news-wrapper.index-1 .section-name.index-1 h1 {
+    color: #ffffff;
+}
+.section-name.index-1 h1 {
+    font-family: 'Lobster';
+    padding-bottom: 21px;
+    
+}
+h1 {
+    font-size: 36px;
+}
+.news-wrapper.index-1 .section-name.index-1 p {
+    color: #ffffff;
+}
+.section-name.index-1 p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 17px;
+}
+.news-wrapper.index-1 .section-name.index-1 .sep {
+    background: url(/images/sep-double-white.png) center no-repeat;
+}.section-name.index-1 .sep {
+    width: 100%;
+    height: 12px;
+    
+}
+.news-wrapper.index-1 .news-boxes {
+    padding-top: 76px;
+}
+.news-wrapper.index-1 .news-boxes .news-box-outer {
+    margin: 15px 0;
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px dashed rgba(255, 255, 255, 0.25);
+    padding: 8px;
+    transition: all 0.3s ease;
+}
+.news-wrapper.index-1 .news-boxes .news-box-outer .news-box-inner {
+    overflow: auto;
+    width: 100%;
+    float: none;
+    display: block;
+    height: 100%;
+    padding: 32px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.news-wrapper.index-1 .news-boxes .news-box-outer .news-box-inner .image {
+    background-color: #fff;
+    z-index: 1;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 38.2%;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.news-wrapper.index-1 .news-boxes .news-box-outer .news-box-inner .image img {
+    transition: all 2s ease;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+.news-wrapper.index-1 .news-boxes .news-box-outer .news-box-inner .image .mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: scale(0, 0);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    }
+.mask.index-1 {
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.mask.index-1 a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+a, a:hover, a:focus, a:active {
+    background: none;
+    outline: 0;
+    text-decoration: none;
+    border: none;
+}
+.news-wrapper.index-1 .news-boxes .news-box-outer .news-box-inner .info-block {
+    position: relative;
+    float: right;
+    width: 57%;
+    top: -4px;
+}
+.news-wrapper.index-1 .news-boxes .news-box-outer .news-box-inner .info-block h3 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+h3 {
+    font-size: 18px;
+}
+.news-wrapper.index-1 .news-boxes .news-box-outer:hover .news-box-inner h3 {
+    color: #ffa800;
+}
+.news-wrapper.index-1 .news-boxes .news-box-outer:hover .news-box-inner a.button {
+    color: #ffa800;
+}
+.news-wrapper.index-1 .news-boxes .news-box-outer .news-box-inner .info-block h5 {
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: rgba(51, 51, 51, 0.5);
+    padding: 12px 0 15px;
+}
+h5 {
+    font-size: 14px;
+}
+.news-wrapper.index-1 .news-boxes .news-box-outer .news-box-inner .info-block h5 i {
+    color: #ffa800;
+    margin-right: 5px;
+    
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    }
+.news-wrapper.index-1 .news-boxes .news-box-outer .news-box-inner .info-block p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+    line-height: 23px;
+    padding-bottom: 4px;
+}
+.news-wrapper.index-1 .news-boxes .news-box-outer .news-box-inner .info-block a.button {
+    float: right;
+}
+.button.button-special {
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: #333333;
+    font-size: 14px;
+    background: url(/images/sep-min-1.png) bottom no-repeat;
+    padding-bottom: 8px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+a, a:hover, a:focus, a:active {
+    outline: 0;
+    text-decoration: none;
+    border: none;
+}

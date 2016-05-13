@@ -1,0 +1,348 @@
+source link
+
+
+http://demo.yolotheme.com/html/kidzone/index.html
+
+
+
+<div class="counters-wrapper index-1">
+        <div class="container">
+          <!-- Counters Row-->
+          <div class="counters row">
+            <!-- Counter 1-->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="counter-outer color-1"><i class="fa fa-users"></i>
+                <!-- Counter Inner-->
+                <div class="counter-inner">
+                  <h1 id="counting-1" class="counter"></h1>
+                  <h2>Teacher</h2>
+                </div>
+              </div>
+            </div>
+            <!-- Counter 2-->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="counter-outer color-2"><i class="fa fa-bookmark"></i>
+                <!-- Counter Inner-->
+                <div class="counter-inner"><span id="counting-2" class="counter"></span>
+                  <h2>Campus</h2>
+                </div>
+              </div>
+            </div>
+            <!-- Counter 3-->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="counter-outer color-3"><i class="fa fa-user"></i>
+                <!-- Counter Inner-->
+                <div class="counter-inner"><span id="counting-3" class="counter"></span>
+                  <h2>Stundents</h2>
+                </div>
+              </div>
+            </div>
+            <!-- Counter 4-->
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <div class="counter-outer color-4"><i class="fa fa-clock-o"></i>
+                <!-- Counter Inner-->
+                <div class="counter-inner"><span id="counting-4" class="counter"></span>
+                  <h2>Teaching Hours</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+                  <!-- Pre-footer Content-->
+            <div class="row">
+              <!-- About-->
+              <div class="ft col-md-3 col-sm-6">
+                <div class="about">
+                  <h2 class="title">About</h2><img src="img/logo-big.png" alt="">
+                  <p>Fast and accurate in problem-solving and make the best decision in every situation.</p>
+                  <p>Our mission is to help every child be well-prepared for their futures with different self-skills.</p>
+                </div>
+              </div>
+              <!-- Tags-->
+              <div class="ft col-md-3 col-sm-6">
+                <div class="tags">
+                  <h2 class="title">Tags</h2>
+                  <ul>
+                    <li><a href="#">book</a></li>
+                    <li><a href="#">course</a></li>
+                    <li><a href="#">courses</a></li>
+                    <li><a href="#">education</a></li>
+                    <li><a href="#">excursions</a></li>
+                    <li><a href="#">math</a></li>
+                    <li><a href="#">primary</a></li>
+                    <li><a href="#">school</a></li>
+                    <li><a href="#">sport</a></li>
+                    <li><a href="#">teacher</a></li>
+                    <li><a href="#">kid</a></li>
+                    <li><a href="#">learn</a></li>
+                    <li><a href="#">paint</a></li>
+                    <li><a href="#">room</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Quick Menu-->
+              <div class="ft col-md-3 col-sm-6">
+                <div class="quick-menu">
+                  <h2 class="title">Quick Menu</h2>
+                  <ul>
+                    <li><a href="time_table.html">Time Table<i class="icon fa fa-angle-right"></i></a></li>
+                    <li><a href="">FAQ's<i class="icon fa fa-angle-right"></i></a></li>
+                    <li><a href="">Blog Large<i class="icon fa fa-angle-right"></i></a></li>
+                    <li><a href="">Members<i class="icon fa fa-angle-right"></i></a></li>
+                    <li><a href="">Services<i class="icon fa fa-angle-right"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Recent Post-->
+              <div class="ft col-md-3 col-sm-6">
+                <div class="recent-posts-outer">
+                  <h2 class="title">Recent Posts</h2>
+                  <div class="recent-posts-inner">
+                    <!-- recent post 1-->
+                    <div class="recent-post">
+                      <div class="img"><a href="#"><img src="img/others/recent-post-footer-1.jpg" alt=""></a></div>
+                      <div class="info-block"><a href="#">
+                          <h5>Kids and mordern technology </h5></a>
+                        <h6>Oct 06, 2015<span class="line"></span></h6>
+                      </div>
+                    </div>
+                    <!-- recent post 2-->
+                    <div class="recent-post">
+                      <div class="img"><a href="#"><img src="img/others/recent-post-footer-2.jpg" alt=""></a></div>
+                      <div class="info-block"><a href="#">
+                          <h5>What should parents teach childrens?</h5></a>
+                        <h6>Oct 06, 2015<span class="line"></span></h6>
+                      </div>
+                    </div>
+                    <!-- recent post 2-->
+                    <div class="recent-post last">
+                      <div class="img"><a href="#"><img src="img/others/recent-post-footer-3.jpg" alt=""></a></div>
+                      <div class="info-block"><a href="#">
+                          <h5>Don't break promises with children</h5></a>
+                        <h6>Oct 06, 2015<span class="line"></span></h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            
+           <form method="get" action="#" class="search-form container">
+            <div>
+              <input type="search" name="search-field" placeholder="Type and hit enter..." class="text-search-field"><i id="close-btn" class="fa fa-close"></i>
+            </div>
+          </form>
+          
+          
+          
+          
+          <ul class="sub-menu">
+                    <li><a href="index.html">Home Color</a></li>
+                    <li><a href="index-2.html">Home Classic</a></li>
+                  </ul>
+                  
+                  
+                  
+                  
+                  <!-- Search Icon-->
+                <li class="menu-item">
+                  <div class="search-nav big"><i class="fa fa-search"></i></div>
+                </li>
+                
+                
+                
+                
+                 <nav class="navbar duplicate hidden navbar-1">
+          <!-- Search Form-->
+          <form method="get" action="#" class="search-form container">
+            <div>
+              <input type="search" name="search-field" placeholder="Type and hit enter..." class="text-search-field"><i class="close-btn fa fa-close"></i>
+            </div>
+          </form>
+          <div class="navigation container">
+            <!-- Nav Bar Toggle/collapse and Logo-->
+            <div class="navbar-header">
+              <div class="navbar-brand"><a href="index.html"><img src="/img/logo.png" alt=""></a></div>
+              <!-- Navigation Toggle-->
+              <button type="button" data-toggle="collapse" data-target="#myNavbar" class="navbar-toggle"><span class="src-only"></span><i class="fa fa-bars"></i></button>
+              <div class="search-nav min"><i class="fa fa-search"></i></div>
+            </div>
+            <!-- Collpsing Items and Navigation-->
+            <div id="myNavbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <!-- Item 1-->
+                <li class="menu-item"><a data-toggle="dropdown" href="#" class="selected dropdown-toggle">Home<i class="fa fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="index.html">Home Page 1</a></li>
+                    <li><a href="index-2.html">Home Page 2</a></li>
+                  </ul>
+                </li>
+                <!-- Item 2-->
+                <li class="menu-item"><a data-toggle="dropdown" href="#" class="dropdown-toggle">Course<i class="fa fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="course-grid.html">Course Grid</a></li>
+                    <li><a href="course-list.html">Course List</a></li>
+                    <li><a href="course-details.html">Course Details</a></li>
+                  </ul>
+                </li>
+                <!-- Item 3-->
+                <li class="menu-item"><a data-toggle="dropdown" href="#" class="dropdown-toggle">Teachers<i class="fa fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="teacher-grid.html">Teachers Grid</a></li>
+                    <li><a href="teacher-list.html">Teacher List</a></li>
+                    <li><a href="teacher-details.html">Teacher Details</a></li>
+                  </ul>
+                </li>
+                <!-- Item 4-->
+                <li class="menu-item"><a data-toggle="dropdown" href="" class="dropdown-toggle">Events<i class="fa fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="event-grid.html">Events Grid</a></li>
+                    <li><a href="event-details.html">Events Details</a></li>
+                  </ul>
+                </li>
+                <!-- Item 5-->
+                <li class="menu-item"><a data-toggle="dropdown" href="#" class="dropdown-toggle">Blog<i class="fa fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="blog-masonry.html">Blog Masonry</a></li>
+                    <li><a href="blog-list.html">Blog Listing</a></li>
+                    <li><a href="blog-details.html">Blog Details</a></li>
+                  </ul>
+                </li>
+                <!-- Item 6-->
+                <li class="menu-item"><a data-toggle="dropdown" href="#" class="dropdown-toggle">Pages<i class="fa fa-angle-down"></i></a>
+                  <ul class="sub-menu">
+                    <li><a href="timetable.html">Time Table</a></li>
+                    <li><a href="princing-plans.html">Pricing Plans</a></li>
+                  </ul>
+                </li>
+                <!-- Item 7-->
+                <li class="menu-item"><a href="contact-us.html">Contact</a></li>
+                <!-- Search Icon-->
+                <li class="menu-item">
+                  <div class="search-nav big"><i class="fa fa-search"></i></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+
+<!-- Video Section-->
+      <div class="video-wrapper index-1">
+        <div class="container">
+          <div class="row">
+            <!-- Left side-->
+            <div class="col-md-6 col-sm-6 left-side">         <img src="img/others/kid1.png" alt="" class="kid-image img-responsive"></div>
+            <!-- Right side-->
+            <div class="col-md-6 col-sm-6 right-side"><a href="#" class="video-btn"><i class="fa fa-play"></i></a><img src="img/others/monitor-home-1.png" alt="" class="img-responsive"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer-->
+        <div class="footer">
+          <div class="container">
+            <!-- Social Media-->
+            <ul class="social-media">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+              <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            </ul>
+            <!-- Copyright-->
+            <h5 class="copyright">© Kidzone - Children Kindergarten WordPress Theme by <a href="#">YoloTheme</a></h5>
+          </div>
+        </div>
+        
+        
+        
+        <!-- Item Filter-->
+        <ul class="portfolio-filter">
+          <li data-filter="*" class="active"><i class="fa fa-circle"></i>All</li>
+          <li data-filter=".activities"><i class="fa fa-circle"></i>Activities</li>
+          <li data-filter=".event"><i class="fa fa-circle"></i>Event</li>
+          <li data-filter=".photos"><i class="fa fa-circle"></i>Photos</li>
+          <li data-filter=".program"><i class="fa fa-circle"></i>Program</li>
+          <li data-filter=".songs"><i class="fa fa-circle"></i>Songs</li>
+          <li data-filter=".video"><i class="fa fa-circle"></i>Video</li>
+        </ul>
+        
+        
+        
+        <!-- More Btn--><a href="#" class="row button button-special-big">View All Gallery</a>
+        
+        
+        
+        
+        
+        
+        
+        about us.................
+             <div class="about-wrapper index-1">
+        <div class="container">
+          <!-- Section Name-->
+          <div class="section-name index-1">
+            <h1>About Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, ab.</p>
+            <div class="sep"></div>
+          </div>
+          <!-- Tab switcher-->
+          <ul class="nav nav-pills tab-switcher text-center">
+            <li><a data-toggle="tab" href="#tab-1" aria-expanded="true">Our Foundation</a></li>
+            <li class="active"><a data-toggle="tab" href="#tab-2" aria-expanded="false">Our Mision</a></li>
+          </ul>
+          <!-- Tabs Content-->
+          <div class="tab-content">
+            <!-- Tab Content 1-->
+            <div id="tab-1" class="tab-pane">
+              <div class="row">
+                <!-- Info Block-->
+                <div class="carousel">
+                  <ul class="carousel-wrapper">
+                    <li class="carousel-box left"><img src="img/others/owl-image-1.jpg" alt=""></li>
+                    <li class="carousel-box is-active"><img src="img/others/owl-image-4.jpg" alt=""></li>
+                    <li class="carousel-box right"><img src="img/others/owl-image-5.jpg" alt=""></li>
+                  </ul>
+                <span class="nav-left"></span><span class="nav-right"></span></div>
+                <p>Our mission is to help every child be well-prepared for their futures with different solf-skills, fast and accurate <br> in problem solving and make the best decision in every situations.        </p>
+              </div>
+            </div>
+            <!-- Tab Content 2-->
+            <div id="tab-2" class="active tab-pane">
+              <div class="row">
+                <!-- Image-->
+                <div class="img col-md-6"><img src="img/others/teacher.png" alt="" class="img-responsive"></div>
+                <!-- Info Block-->
+                <div class="info-block col-md-6">
+                  <p>We are group of teachers who really love childrens and enjoy every moment of teaching and playing with our students.</p><br>
+                  <p>Our teachers graduated from differnt Universities with different subjects but its all included in Education Major. Therefore, we are very confident with our knowledge and teaching skills.</p>
+                  <ul>
+                    <li><i class="fa fa-check"></i>
+                      <h5>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h5>
+                    </li>
+                    <li><i class="fa fa-check"></i>
+                      <h5>Nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</h5>
+                    </li>
+                    <li><i class="fa fa-check"></i>
+                      <h5>Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</h5>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
