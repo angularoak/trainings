@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app="sampleService">
+  <head>
+      <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+    </head>
+  <body>
+      <div ng-controller="serviceController">
+     <input type="text" ng-model="number">
+          <button ng-click="square()">Find Squre</button>
+          <button ng-click="cube()">Find Cube</button>
+          <button ng-click="add()">Add</button>
+          {{output}}
+      </div>
+        <script src="js/angular.js"></script>  
+        <script src="js/sampleServices.js"></script>  
+        <script src="js/services/caliculatorService.js"></script>  
+      </body>
+</html>
