@@ -1,0 +1,18 @@
+<!doctype html>
+<html ng-app="sampleFactory">
+  <head>
+      <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+    </head>
+  <body>
+      <div ng-controller="factoryController">
+     <input type="text" ng-model="number">
+          <button ng-click="square()">Find Squre</button>
+          <button ng-click="cube()">Find Cube</button>
+          <button ng-click="add()">Add</button>
+          {{output}}
+      </div>
+        <script src="js/angular.js"></script>  
+        <script src="js/sampleFactory.js"></script>  
+        <script src="js/services/caliculatorFactory.js"></script>  
+      </body>
+</html>
