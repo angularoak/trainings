@@ -7,6 +7,9 @@ function Sucess(response) {
    function faliure(error){
        $scope.httpError="Somthing Went wrong please contact Admin"
    };
+  /*  products.get();
+    products.update(data);
+    products.delete(1);*/
    
     $http.get("http://services.odata.org/V4/Northwind/Northwind.svc/Products").then(Sucess,faliure);
     
