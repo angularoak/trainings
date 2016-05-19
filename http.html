@@ -5,11 +5,13 @@
     </head>
     <body class="container">
         <div ng-controller="productsDetails">
-            <h3>Http Example</h3><input ng-model="sortByYourPrefernce" > 
-<div class="error">{{httpError}}</div>
-<h1>Product Name {{prodName}}</h1>
+            <h3>Http Example</h3>
+            <input ng-model="sortByYourPrefernce" > 
+            <div class="error">{{httpError}}</div>
+            <h1>Product Name {{prodName}}</h1>
             <input type="checkbox" ng-model="orderBydescAsc">Sort {{sortByYourPrefernce}}<br>
-            <table class="table table-bordered" ng-if="products.length>0">
+            <table class="table table-bordered" 
+                   ng-if="products.length>0">
                 <thead>
                     <tr>
                         <th>Product Name</th>

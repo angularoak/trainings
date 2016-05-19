@@ -48,6 +48,8 @@ app.controller('StudentController', function($scope) {
 
     $scope.Suresh = {};
     $scope.Suresh.name = "Suresh Babu";
+    $scope.Ramesh = {};
+    $scope.Ramesh.name = "Ramesh Babu";
 
 });
 
