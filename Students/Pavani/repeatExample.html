@@ -1,0 +1,47 @@
+<!doctype html>
+<html ng-app="repeatExample">
+
+<head>
+    <title>Repeat Example</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div ng-controller="personalDetails">
+        <!--<ul ng-repeat="personDetails in persons">
+            <li>{{personDetails.Name}}</li>
+        </ul>-->
+
+        <table style="width:100%">
+            <tr>
+                <th>Firstname</th>
+                <th>City</th>
+                <th>Country</th>
+
+            </tr>
+            <tbody ng-repeat="personDetails in persons">
+                <tr>
+                    <td>{{personDetails.Name}}</td>
+                    <td>{{personDetails.City}}</td>
+                    <td>{{personDetails.Country}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="../../js/angular.js"></script>
+    <script src="js/repeat.js"></script>
+</body>
+
+</html>
