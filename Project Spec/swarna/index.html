@@ -1,27 +1,35 @@
 <!doctype html>
-<html ng-app="loginApp">
-  <head>
-      <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
-    </head>
-  <body>       <center>
-      <br>
-      <br>
-      <br><br><br><br><br>
-      <body class="container">
-    <div ng-controller="loginctrl"  >
-      <div class="detailscls">
-          <label>userName:</label>
-      <input type="text" class="unamecls" ng-model="unameTask.desc" placeholder="type user name">
-          <br>
-          <label>password:</label>
-      <input type="text" ng-model="password" placeholder="Enter a password here"><br>   
-       <br>
-      <span class="sendcls">
-        <button class="logincls" ng-click="loginTask()" type="button">login</button>
-         <button class="resetcls" ng-click="resetask()" type="button">reset</button>
-          </span></div></center>
-    </div><!-- /input-group -->
-       <script src="../js/angular.js"></script><br>
-      </center>
-    </body>
+<html ng-app="sgaApp">
+
+<head>
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css" />
+</head>
+    <body class="container">
+        <div ng-controller="loginctrl">
+                <div class="detailscls">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <label>User Name:</label>
+                            <input type="text" class="unamecls" ng-model="uname" placeholder="User Name">
+                            <br>
+                            <label>Password:</label>
+                            <input type="password" ng-model="password" placeholder="*****">
+                            <br>
+                            <br>
+                            <span class="sendcls">
+        <button class="btn" ng-click="login()" type="button">Login</button>
+         <button class="btn" ng-click="reset()" type="button">Reset</button>
+          </span></div>
+                    </div>
+                </div>
+
+        </div>
+        <!-- /input-group -->
+        <script src="../../js/angular.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers/loginCtrl.js"></script>
+        <script src="js/service/services.js"></script>
+      
+        </body>
+
 </html>

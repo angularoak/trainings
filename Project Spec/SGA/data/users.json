@@ -1,0 +1,19 @@
+{
+    "users": [{
+        "userName": "Manager1",
+        "password": "testManager1",
+        "desg": 1
+    }, {
+        "userName": "Manager2",
+        "password": "testManager2",
+        "desg": 1
+    }, {
+        "userName": "temalead1",
+        "password": "testlead1",
+        "desg": 2
+    }, {
+        "userName": "temalead2",
+        "password": "testlead2",
+        "desg": 2
+    }]
+}
