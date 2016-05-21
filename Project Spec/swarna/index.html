@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="loginApp">
+  <head>
+      <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css"/>
+    </head>
+  <body>       <center>
+      <br>
+      <br>
+      <br><br><br><br><br>
+      <body class="container">
+    <div ng-controller="loginctrl"  >
+      <div class="detailscls">
+          <label>userName:</label>
+      <input type="text" class="unamecls" ng-model="unameTask.desc" placeholder="type user name">
+          <br>
+          <label>password:</label>
+      <input type="text" ng-model="password" placeholder="Enter a password here"><br>   
+       <br>
+      <span class="sendcls">
+        <button class="logincls" ng-click="loginTask()" type="button">login</button>
+         <button class="resetcls" ng-click="resetask()" type="button">reset</button>
+          </span></div></center>
+    </div><!-- /input-group -->
+       <script src="../js/angular.js"></script><br>
+      </center>
+    </body>
+</html>

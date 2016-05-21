@@ -1,6 +1,6 @@
-var app = angular.module("myApp",[]);
+var app = angular.module("loginApp",[]);
 
-app.controller("todo",function($scope){
+app.controller("loginctrl",function($scope){
     var tasks=[];
     function addTask(){
         $scope.errortext = "";

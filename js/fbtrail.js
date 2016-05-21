@@ -1,47 +1,30 @@
+var app = angular.module("fbEx",[]);
 
-.header {
-    background-color:darkblue;
-    color:white;
-    text-align:left;
-    font-size:40px;
-    width:100%;
-    padding:5px;
-    }
-#move{
-    background-color:darkblue;
-    color:white;
-    font-size:20px;
-    text-align:right;
-    float-left:10%;
-    float-right:50%;
-    width:95%;
-    padding:5px;
-  }
-#leftbar{
-    line-height:17%;
-    background-color:#eeeeee;
-    height:72%;
-    
-    float:left;
-    padding:2%;
-}
+app.controller("myway",function($scope){
+    var friends=[{
+    "imageUrl":"https://goo.gl/w7bvXE",
+	"FirstName": "Dharma",
+	"LastName": "Teja",
+    "Studies":"calcutta university",
+    "University":"http://www.caluniv.ac.in/",
+	
+	
+}, {
+    "imageUrl":"https://goo.gl/Eaz7qJ",
+	"FirstName": "Swarna",
+	"LastName": "Yenugu",
+    "Studies":"london university",
+    "University":"http://www.london.ac.uk/",
 
-.section {
-    background-color:lightgoldenrodyellow;
-    text-decoration-color: black;
-    width:60%;
-    height:100%
-    align:center;
-    float-right:40%;
-    float-left:40%;
-    padding:15%;	 	 
-}
-#rightbar{
-     line-height:17%;
-    background-color:#eeeeee;
-    height:72%;
+}, {
+     "imageUrl":"https://goo.gl/LXkWpV",
+	"FirstName": "Revathi",
+	"LastName": "Yalamala",
+    "Studies":"newyork university",
+    "University":"http://www.nyu.edu/",
+	
+}]
     
-    
-    float:right;
-    padding:3%;
-}
+    $scope.userName="Suneel";
+    $scope.friends=friends;
+});
