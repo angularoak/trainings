@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="httpExample">
+
+<head>
+    <title>HTTP Example</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        th,
+        td {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div ng-controller="productsDataController">
+        <h1> http call</h1>
+        <h3 ng-bind="httpError"></h3>
+        <table style="width:100%" ng-if="products.length  > 0 ">
+            <tr>
+                <th>Product Name</th>
+                <th>Unit Price</th>
+                <th>Quantity Per Unit</th>
+            </tr>
+            <tbody ng-repeat="productData in products">
+                <tr>
+                    <td>{{productData.ProductName}}</td>
+                    <td>{{productData.UnitPrice}}</td>
+                    <td>{{productData.QuantityPerUnit}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="../../js/angular.js"></script>
+    <script src="js/http.js"></script>
+</body>
+
+</html>
