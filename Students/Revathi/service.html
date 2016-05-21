@@ -1,0 +1,38 @@
+<!doctype html>
+<html ng-app="httpEx">
+    <head>
+        <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css"/>
+    </head>
+    <body class="container">
+        <div ng-controller="ordersDetails">
+            <h3>Http1 Example</h3>
+             <input type="checkbox" ng-model="orderBydescAsc">Sort 
+            <table class="table table-bordered" ng-if="orders.length>0">
+                <th><button  ng-click="myOrderBy='OrderID'"  >OrderID</button></th>
+                <th ><button  ng-click="myOrderBy='CustomerName'" >CustomerName</button></th>
+            <th><button  ng-click="myOrderBy='Quantity'"
+            >Quantity</button></th>
+       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="order in orders | orderBy:myOrderBy:orderBydescAsc">
+       <td ng-click="getDetails(order)">{{order.OrderID}}</td>                 
+                        
+        <td>{{order.OrderID}}</td>
+        <td>{{order.CustomerName}}</td>
+        <td>{{order.Quantity}}</td>
+                        
+                        
+        </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <script src="../../js/angular.js"></script>
+        <script src="js/service.js"></script>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </body>
+</html>
