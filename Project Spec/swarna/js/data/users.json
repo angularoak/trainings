@@ -1,19 +1,19 @@
 {
     "users": [{
-        "userName": "Manager1",
-        "password": "testManager1",
-        "desg": 1
+        "userName": "m1"
+        , "password": "m1"
+        , "desg": 1
     }, {
-        "userName": "Manager2",
-        "password": "testManager2",
-        "desg": 1
+        "userName": "m2"
+        , "password": "m2"
+        , "desg": 1
     }, {
-        "userName": "temalead1",
-        "password": "testlead1",
-        "desg": 2
+        "userName": "t1"
+        , "password": "t1"
+        , "desg": 2
     }, {
-        "userName": "temalead2",
-        "password": "testlead2",
-        "desg": 2
+        "userName": "t2"
+        , "password": "t2"
+        , "desg": 2
     }]
 }
