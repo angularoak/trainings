@@ -1,4 +1,4 @@
-app.controller("loginctrl", function ($scope, userDetails) {
+app.controller("loginctrl", function ($scope, userDetails, $location) {
     function login() {
         function userSuccess(responce) {
             var invalidUser = true;
@@ -8,9 +8,11 @@ app.controller("loginctrl", function ($scope, userDetails) {
                     if ($scope.uname === value.userName && $scope.password === value.password) {
                         $scope.Message = "Valid User";
                         invalidUser = false;
+                        userDetails.setUser(value);
+                        $location.url('/home');
                     } else {
                         invalidUser = true;
-                        $scope.Message = "Invalid User, Please try again";
+                        $scope.Message = "User/Password doesn't exists redirecting to login  page";
                     }
                 }
             });
