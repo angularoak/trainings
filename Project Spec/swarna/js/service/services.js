@@ -12,3 +12,16 @@ app.service("userDetails", function ($http) {
     };
 
 })
+
+app.service("commonServices", function ($http) {
+    this.getEmployeeDetails = function (success, failure) {
+        $http.get("../swarna/js/data/employee.json").then(success, failure);
+    };
+    this.getProjectsDetails = function (success, failure) {
+        $http.get("../swarna/js/data/projects.json").then(success, failure);
+    };
+    this.getTechDetails = function (success, failure) {
+        $http.get("../swarna/js/data/technologies.json").then(success, failure);
+    };
+
+})
