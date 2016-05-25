@@ -4,27 +4,27 @@ app.config(
     function ($routeProvider) {
         $routeProvider.
         when('/home', {
-            templateUrl: 'tempaltes/home.html',
+            templateUrl: 'templates/home.html',
             controller: 'homeController'
         }).
         when('/login', {
-            templateUrl: 'tempaltes/login.html',
+            templateUrl: 'templates/login.html',
             controller: 'loginController'
         }).
         when('/addEmployee', {
-            templateUrl: 'tempaltes/addEmployee.html',
+            templateUrl: 'templates/addEmployee.html',
             controller: 'addEmpController'
         }).
         when('/addTechnology', {
-            templateUrl: 'tempaltes/addTechnology.html',
+            templateUrl: 'templates/addTechnology.html',
             controller: 'addTechController'
         }).
         when('/createProject', {
-            templateUrl: 'tempaltes/createProject.html',
+            templateUrl: 'templates/createProject.html',
             controller: 'createProjController'
         }).
         when('/sga', {
-            templateUrl: 'tempaltes/sga.html',
+            templateUrl: 'templates/sga.html',
             controller: 'sgaController'
         }).
         otherwise({
