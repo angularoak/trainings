@@ -1,0 +1,19 @@
+{
+    "users": [{
+        "userName": "m1"
+        , "password": "m1"
+        , "desg": 1
+    }, {
+        "userName": "m2"
+        , "password": "m2"
+        , "desg": 1
+    }, {
+        "userName": "t1"
+        , "password": "t1"
+        , "desg": 2
+    }, {
+        "userName": "t2"
+        , "password": "t2"
+        , "desg": 2
+    }]
+}

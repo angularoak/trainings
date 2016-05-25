@@ -1,0 +1,24 @@
+<label>EmpId:</label>
+ <input type="text" ng-model="empid">
+ <br><br>
+ <label>EmpName:</label>
+ <input type="text" ng-model="ename">
+ <br><br>
+<label>Experience:</label>
+ <input type="text" ng-model="experience">
+<br><br>
+<label>Designation:</label>
+<select name="select designation">
+   <option value="1">Manager</option>
+   <option value="2">Team Lead</option>
+    <option value="3">Developer</option>
+</select>
+<br><br>
+<label>DOB:</label>
+<input type="date" ng-model="dob">
+ <br><br>
+<label>DOJ:</label>
+ <input type="date" ng-model="doj">
+<br><br>
+ <button class="btn" ng-click="submit()" type="button">Submit</button>
+ <button class="btn" ng-click="reset()" type="button">Reset</button>
