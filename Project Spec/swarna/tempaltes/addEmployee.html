@@ -1,1 +1,29 @@
-<h1>New Employee Details</h1>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <label>Emp id:</label>
+        <input type="text" ng-model="uname" placeholder="Emp id">
+        <br>
+
+        <label>Emp name:</label>
+        <input type="text" ng-model="uname" placeholder="Emp Name">
+        <br>
+        <label>Experiance:</label>
+        <input type="text" class="unamecls" ng-model="uname" placeholder="Experiance">
+        <br>
+        <lable> Designation:</lable>
+        <select>
+            <option value="1">Manager</option>
+            <option value="2">Team Lead</option>
+            <option value="3">Developer</option>
+        </select>
+        <br>
+        <label>DOB:</label>
+        <input type="date" id="date" ng-model="datevalue" />
+        <br>
+        <label>Date of join:</label>
+        <input type="date" id="date" ng-model="datevalue" />
+        <br>
+        <button type="button" ng-click="submit()" class="btn btn-primary">Submit</button>
+        <button type="button"ng-click="reset()" class="btn btn-primary">reset</button>
+    </div>
+    <</div>
