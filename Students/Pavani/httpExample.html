@@ -22,16 +22,18 @@
     <div ng-controller="productsDataController">
         <h1> http call</h1>
         <h3 ng-bind="httpError"></h3>
+        Search : <input type="text" ng-model="searchBy"/>
+        Table is updated by {{searchBy}}...
         <table style="width:100%" ng-if="products.length  > 0 ">
             <tr>
-                <th>Product Name</th>
-                <th>Unit Price</th>
-                <th>Quantity Per Unit</th>
+                <th ng-click="sort('ProductName')">Product Name</th>
+                <th ng-click="sort('UnitPrice')">Unit Price</th>
+                <th ng-click="sort('QuantityPerUnit')">Quantity Per Unit</th>
             </tr>
-            <tbody ng-repeat="productData in products">
-                <tr>
-                    <td>{{productData.ProductName}}</td>
-                    <td>{{productData.UnitPrice}}</td>
+            <tbody >
+                <tr  ng-repeat="productData in products | filter:searchBy | orderBy:sortBy:orderBydescAsc ">
+                    <td>{{productData.ProductName|uppercase}}</td>
+                    <td>{{productData.UnitPrice |currency}}</td>
                     <td>{{productData.QuantityPerUnit}}</td>
                 </tr>
             </tbody>
