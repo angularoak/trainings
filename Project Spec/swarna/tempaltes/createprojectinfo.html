@@ -1,35 +1,36 @@
 <div class="panel panel-default">
     <div class="panel-body">
         <label>Project name:</label>
-        <input type="text" ng-model="uname" placeholder="Project name">
+        <input type="text" ng-model="newProject.name" placeholder="Project name">
         <br>
 
         <lable> Manager:</lable>
-        <select ng-model="selectedManger">
+        <select ng-model="newProject.manager">
             <option value="">-Select Manager-</option>
-            <option ng-repeat="employee in employees" value={{employee.empId}} ng-if="employee.desg==1">{{employee.empName}}</option>
+            <option ng-repeat="employee in employees" value={{employee.empName}} ng-if="employee.desg=='1'">{{employee.empName}}</option>
         </select>
         <br>
         <lable> Team Lead:</lable>
        <!-- <select ng-model="toAddChart" ng-options="employee.empId as employee.empName for employee in employees| filter:employee.desg==2">-->
-         <select ng-model="selectedTl">
+         <select ng-model="newProject.teamlead">
             <option value="">-Select TL-</option>
-            <option ng-repeat="employee in employees" value={{employee.empId}} ng-if="employee.desg==2">{{employee.empName}}</option>
+            <option ng-repeat="employee in employees" value={{employee.empName}} ng-if="employee.desg=='2'">{{employee.empName}}</option>
             
         </select>
         <br>
         <lable>Team Members</lable>
-         <select multiple ng-model="selectedTeamMembers">
-                       <option ng-repeat="employee in employees" value={{employee}} ng-if="employee.desg==3">{{employee.empName}}</option>
+         <select multiple ng-model="newProject.teamMembers">
+                       <option ng-repeat="employee in employees" value={{employee}} ng-if="employee.desg=='3'">{{employee.empName}}</option>
             
         </select>
         <br>
         <lable>Technologies</lable>
-         <select multiple ng-model="projectTechnologies">
+         <select multiple ng-model="newProject.technologies">
                        <option ng-repeat="tech in technologies" value={{tech}}>{{tech.name}}</option>
             
         </select>
-        <button type="button" ng-click="submit()" class="btn btn-primary">Submit</button>
+        <button type="button" ng-click="createProject()" class="btn btn-primary">Submit</button>
         <button type="button" ng-click="reset()" class="btn btn-primary">reset</button>
+        {{newProject | json}}
     </div>
 </div>

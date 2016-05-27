@@ -1,4 +1,4 @@
-app.controller("loginctrl", function ($scope, userDetails, $location) {
+app.controller("loginctrl", function ($scope, userDetails, $location,$localStorage,commonServices) {
     function login() {
         function userSuccess(responce) {
             var invalidUser = true;
@@ -9,6 +9,7 @@ app.controller("loginctrl", function ($scope, userDetails, $location) {
                         $scope.Message = "Valid User";
                         invalidUser = false;
                         userDetails.setUser(value);
+                        storeDatainLocalStorage();
                         $location.url('/home');
                     } else {
                         invalidUser = true;
@@ -26,6 +27,7 @@ app.controller("loginctrl", function ($scope, userDetails, $location) {
              }*/
 
         };
+        
 
         function userFailure(error) {
             alert("failed to load details");
@@ -39,6 +41,17 @@ app.controller("loginctrl", function ($scope, userDetails, $location) {
         $scope.password = "";
 
     };
+    function storeDatainLocalStorage(){
+         function projectSucess(response) {
+            console.log("Success Projects details");
+            $localStorage.projects = response.data.projects;
+        }
+
+        function projectFailed(error) {
+            console.log("Failed to get Projects details");
+        }
+        commonServices.getProjectsDetails(projectSucess, projectFailed);
+    }
     $scope.login = login;
     $scope.reset = reset;
 

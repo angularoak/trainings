@@ -19,4 +19,8 @@ app.controller("createprojectinfoCtrl", function($scope, userDetails, commonServ
     commonServices.getEmployeeDetails(employeeSucess, employeeFailed);
 
     commonServices.getTechDetails(technologiesSucess, technologiesFailed);
+
+    $scope.createProject = function() {
+      commonServices.setProjectsDetails($scope.newProject);
+    }
 });

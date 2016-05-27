@@ -12,7 +12,7 @@
       <span class="input-group-btn">
         <button class="btn btn-default" ng-click="addTask()" type="button">Add</button>
       </span>
-    </div><!-- /input-group -->
+    </div><!-- /input-group -->{{errortext}}
   <ul class="list-group" ng-show="tasks.length>0">
       <a href="#" class="list-group-item active">Todo List</a>
       <li class="list-group-item" ng-repeat="task in tasks" ng-bind="task.desc"></li>

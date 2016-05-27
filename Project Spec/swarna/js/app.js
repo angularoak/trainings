@@ -1,4 +1,4 @@
-var app = angular.module("sgaApp", ['ngRoute']);
+var app = angular.module("sgaApp", ['ngRoute',"ngStorage"]);
 
 app.config(
     function ($routeProvider) {

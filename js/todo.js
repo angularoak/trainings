@@ -4,6 +4,7 @@ app.controller("todo",function($scope){
     var tasks=[];
     function addTask(){
         $scope.errortext = "";
+        $scope.todoTask.completed = false
         if (JSON.stringify($scope.tasks).indexOf($scope.todoTask.desc) == -1) {
             $scope.tasks.push($scope.todoTask);
         } else {
