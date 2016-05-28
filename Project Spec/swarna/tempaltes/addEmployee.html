@@ -1,29 +1,29 @@
 <div class="panel panel-default">
     <div class="panel-body">
         <label>Emp id:</label>
-        <input type="text" ng-model="uname" placeholder="Emp id">
+        <input type="text" ng-model="newEmployee.empId" placeholder="Emp id">
         <br>
 
         <label>Emp name:</label>
-        <input type="text" ng-model="uname" placeholder="Emp Name">
+        <input type="text" ng-model="newEmployee.empName" placeholder="Emp Name">
         <br>
         <label>Experiance:</label>
-        <input type="text" class="unamecls" ng-model="uname" placeholder="Experiance">
+        <input type="text" class="unamecls" ng-model="newEmployee.experience" placeholder="Experiance">
         <br>
         <lable> Designation:</lable>
-        <select>
+        <select ng-model="newEmployee.desg">
             <option value="1">Manager</option>
             <option value="2">Team Lead</option>
             <option value="3">Developer</option>
         </select>
         <br>
         <label>DOB:</label>
-        <input type="date" id="date" ng-model="datevalue" />
+        <input type="date" id="date" ng-model="newEmployee.DOB" />
         <br>
         <label>Date of join:</label>
-        <input type="date" id="date" ng-model="datevalue" />
+        <input type="date" id="date" ng-model="newEmployee.DOJ" />
         <br>
-        <button type="button" ng-click="submit()" class="btn btn-primary">Submit</button>
+        <button type="button" ng-click="addEmployee()" class="btn btn-primary">Submit</button>
         <button type="button"ng-click="reset()" class="btn btn-primary">reset</button>
     </div>
     <</div>

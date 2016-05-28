@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="routingExample">
+
+<head>
+    <title>Routing Intro</title>
+    <style>
+        .header{
+            background-color: gray;
+            color: cornsilk;
+            text-align: center;
+        }
+        .footer{
+            background: black;
+            color: aliceblue;
+            text-align: center;
+            margin-top: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="header">Routing Example Header</h1>
+    <a href="#/home">Home</a>
+    <a href="#/aboutus">About us</a>
+    <ng-view>
+    </ng-view>
+    <h1 class="footer">Routing Example Footer</h1>
+    
+    <script src="js/libs/angular.js"></script>
+    <script src="js/libs/angular-route.js"></script>
+    <script src="js/myRouting.js"></script>
+</body>
+</html>

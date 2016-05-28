@@ -50,7 +50,7 @@ app.controller("loginctrl", function ($scope, userDetails, $location,$localStora
         function projectFailed(error) {
             console.log("Failed to get Projects details");
         }
-        commonServices.getProjectsDetails(projectSucess, projectFailed);
+        commonServices.getCurrentProjects(projectSucess, projectFailed);
     }
     $scope.login = login;
     $scope.reset = reset;

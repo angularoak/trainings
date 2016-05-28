@@ -14,8 +14,11 @@ app.service("userDetails", function ($http,$localStorage) {
 })
 
 app.service("commonServices", function ($http,$localStorage) {
-    this.getEmployeeDetails = function (success, failure) {
+    this.getCurrentEmployeeDetails = function (success, failure) {
         $http.get("../swarna/js/data/employee.json").then(success, failure);
+    };
+    this.getCurrentProjects = function (success, failure) {
+        $http.get("../swarna/js/data/projects.json").then(success, failure);
     };
     this.getProjectsDetails = function() {
         return $localStorage.projects;
@@ -24,6 +27,12 @@ app.service("commonServices", function ($http,$localStorage) {
         $localStorage.projects.push(newProject);
     };
     
+    this.getEmployeeDetails  = function() {
+        return $localStorage.employees;
+    };
+    this.setEmployeeDetails = function(newEmployee) {
+        $localStorage.employees.push(newEmployee);
+    };
     this.getTechDetails = function (success, failure) {
         $http.get("../swarna/js/data/technologies.json").then(success, failure);
     };
