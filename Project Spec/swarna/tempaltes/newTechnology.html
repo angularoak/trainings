@@ -1,14 +1,14 @@
 <div class="panel panel-default">
     <div class="panel-body">
         <label>Technology:</label>
-        <input type="text" ng-model="uname" placeholder="Emp id">
+        <input type="text" ng-model="newTchnology.name" placeholder="technology">
         <br>
 
         <label>verson:</label>
-        <input type="text" ng-model="uname" placeholder="Emp Name">
+        <input type="text" ng-model="newTchnology.version" placeholder="version">
         <br>
         <label>provider:</label>
-        <input type="text" class="unamecls" ng-model="uname" placeholder="Experiance">
+        <input type="text" class="unamecls" ng-model="newTchnology.provider" placeholder="provider">
         <br>
-        <button type="button" ng-click="submit()" class="btn btn-primary">Submit</button>
+        <button type="button" ng-click="addTechnology()" class="btn btn-primary">Submit</button>
         <button type="button" ng-click="reset()" class="btn btn-primary">reset</button>
