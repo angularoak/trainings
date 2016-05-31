@@ -23,7 +23,9 @@ app.service("commonServices", function ($http, $localStorage) {
     this.getCurrenttechnologyDetails = function (success, failure) {
         $http.get("../swarna/js/data/technologies.json").then(success, failure);
     };
-
+    this.getSGADetails = function (success, failure) {
+        $http.get("../swarna/js/data/sga.json").then(success, failure);
+    };
     this.getProjectsDetails = function () {
         return $localStorage.projects;
     };
@@ -43,5 +45,5 @@ app.service("commonServices", function ($http, $localStorage) {
     this.setTchnologyDetails = function (newTchnology) {
         $localStorage.technologies.push(newTchnology);
     };
-   
+
 })
