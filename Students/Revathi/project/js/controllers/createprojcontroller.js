@@ -1,20 +1,11 @@
-app.controller("createProjController", function($scope, userInformation,commonServices, $location){
+app.controller("createProjController", function($scope, userInformation,commonServices, $location,$localStorage ){
     
-    (function() {
-        if($localStorage.projects===undefined)
-commonServices.getStoredProjectsDetails(projectSuccess,projectFailure);
-        function projectSuccess(response) {
-        console.log("Success project details");
-        $localStorage.projects = response.data.projects;
-    }
-
-    function projectFailure(error) {
-        console.log("Failed to get project details");
-    }
-    })();
-     $scope.employees = commonServices.getEmployeeDetails();
-
+    $scope.employees = commonServices.getEmployeeDetails();
+    $scope.technologies = commonServices.getTechDetails();
     $scope.createNewProject = function() {
-  commonServices.setProjectsDetails($scope.newProject);
-     }
+    commonServices.setProjectsDetails($scope.newProject);
+    $scope.newProject= "";
+    console.log("Project created Sucessfully");
+    $location.url('/home');
+    }
 });

@@ -1,4 +1,4 @@
-app.controller("addTechController", function($scope,commonServices, $localStorage){
+app.controller("addTechController", function($scope,commonServices,$location, $localStorage){
     (function() {
         if($localStorage.technologies===undefined)
 commonServices.getStoredTechDetails(techSuccess,techFailure);
@@ -14,5 +14,8 @@ commonServices.getStoredTechDetails(techSuccess,techFailure);
 
    $scope.createNewTechnology = function() {
    commonServices.setTechDetails($scope.newTechnology);
+    $scope.newTechnology= "";
+    console.log("Technology created Sucessfully");
+    $location.url('/home');
      }
 });

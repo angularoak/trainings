@@ -1,4 +1,4 @@
-app.controller("addEmpController", function($scope,commonServices, $localStorage){
+app.controller("addEmpController", function($scope,commonServices,$location, $localStorage){
     (function() {
         if($localStorage.employees===undefined)
 commonServices.getStoredEmployeeDetails(employeeSuccess,employeeFailure);
@@ -14,5 +14,8 @@ commonServices.getStoredEmployeeDetails(employeeSuccess,employeeFailure);
 
    $scope.createNewEmployee = function() {
    commonServices.setEmployeeDetails($scope.newEmployee);
+    $scope.newEmployee= "";
+    console.log("Employee created Sucessfully");
+    $location.url('/home');
      }
 });

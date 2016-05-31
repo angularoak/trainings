@@ -3,7 +3,7 @@
         "empId": "101",
         "empName": "John",
         "experience": "5.6",
-        "desg": "1
+        "desg": "1",
         "DOB": "03/20/1984",
         "DOJ": "09/15/2010"
     }, {
@@ -32,6 +32,34 @@
         "empName": "Smith",
         "experience": "5.3",
         "desg": "2",
+        "DOB": "03/20/1982",
+        "DOJ": "09/15/2009"
+    }, {
+        "empId": "200",
+        "empName": "Revathi",
+        "experience": "1",
+        "desg": "3",
+        "DOB": "03/20/1982",
+        "DOJ": "09/15/2009"
+    }, {
+        "empId": "201",
+        "empName": "Pavani",
+        "experience": "2",
+        "desg": "3",
+        "DOB": "03/20/1982",
+        "DOJ": "09/15/2009"
+    }, {
+        "empId": "202",
+        "empName": "Swarna",
+        "experience": "2",
+        "desg":"3",
+        "DOB": "03/20/1982",
+        "DOJ": "09/15/2009"
+    }, {
+        "empId": "203",
+        "empName": "Dharma",
+        "experience": "4",
+        "desg": "3",
         "DOB": "03/20/1982",
         "DOJ": "09/15/2009"
     }, {
