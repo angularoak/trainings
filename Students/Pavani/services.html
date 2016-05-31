@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="servicesApp">
+
+<head>
+    <title>Angular Intro</title>
+</head>
+
+<body>
+    <div ng-controller="servicesController">
+        First Name :
+        <input type="text" ng-model="firstName"> 
+        Last Name :
+        <input type="text" ng-model="lastName">
+        <button ng-click="getFullName()">Get Full Name</button>
+        <button ng-click="greetEmployee()">Greetings To Employee</button>
+        {{FullName}}{{Greetings}}
+    </div>
+    <script src="../../js/angular.js"></script>
+    <script src="js/servicesExample.js"></script>
+</body>
+
+</html>
