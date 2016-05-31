@@ -1,4 +1,4 @@
-app.controller("loginController", function($scope, userInformation) {
+app.controller("loginController", function($scope, userInformation, $location, $localStorage,commonServices) {
     function login() {
         function userSuccess(responce) {
             var invalidUser = true;
@@ -7,12 +7,14 @@ app.controller("loginController", function($scope, userInformation) {
                 if (invalidUser) {
                     if ($scope.uname === value.userName &&
                         $scope.pwd === value.password) {
-
-                        alert("valid");
+                        $scope.Message = "Valid User";
                         invalidUser = false;
+                        userInformation.setUser(value);
+                        storeDataInLocalStorage();                       
+                        $location.url('/home');
                     } else {
-                        alert("invalid");
                         invalidUser = true;
+                         $scope.Message = "User/Password doesn't exists";
                     }
                 }
             });
@@ -28,6 +30,16 @@ app.controller("loginController", function($scope, userInformation) {
         $scope.uname = "";
         $scope.pwd = "";
     };
+      function storeDataInLocalStorage(){
+      function projectSucess(response) {
+      console.log("Success Projects details");
+      $localStorage.projects = response.data.projects;
+        }
+      function projectFailed(error) {
+      console.log("Failed to get Projects details");
+        }
+      commonServices.getStoredProjectsDetails(projectSucess, projectFailed);
+    }
     $scope.login = login;
     $scope.reset = reset;
 

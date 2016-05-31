@@ -1,21 +1,24 @@
-        
-            <div class="box">
+        <h1>Welcome to {{user.userName}}</h1>
+            
+                <div class="listgroup">
          <h3> Home Page</h3>
-         <a href="addEmployee.html">add employees</a>
          <br>
-         <br>
-         <a href="addTechnology.html">add technologies</a>
-         <br>
-         <br>
-         <a href="createProject.html">create project information</a>
-         <br>
-         <br>
-         <a href="sga.html">create skill gap analysis</a>
-         <br>
-         <br>
-         <a href="#">skill gap analysis report</a>
-         </div>
+        <div class="homestyle">
+         <a href="#/addEmployee" ng-if="user.desg==1" 
+            class="list-group-item">add employees</a>
             </div>
+         <a href="#/addTechnology" ng-if="user.desg==1" 
+            class="list-group-item">add technologies</a>
+         <a href="#/CreateProjectinfo" ng-if="user.desg==1" 
+            class="list-group-item">create project information</a>
+         <a href="#/createSga" ng-if="user.desg==2" 
+            class="list-group-item">create skill gap analysis</a>
+         <a href="#sgaReport"  class="list-group-item">skill gap analysis report</a>
+        
+</div>
+                
+
+            
 
 
 

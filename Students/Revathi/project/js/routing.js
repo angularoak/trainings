@@ -1,4 +1,4 @@
-var app = angular.module("webApp", ['ngRoute']);
+var app = angular.module("webApp", ['ngRoute',"ngStorage"]);
 
 app.config(
     function ($routeProvider) {
@@ -19,11 +19,11 @@ app.config(
             templateUrl: 'templates/addTechnology.html',
             controller: 'addTechController'
         }).
-        when('/createProject', {
+        when('/CreateProjectinfo', {
             templateUrl: 'templates/createProject.html',
             controller: 'createProjController'
         }).
-        when('/sga', {
+        when('/createSga', {
             templateUrl: 'templates/sga.html',
             controller: 'sgaController'
         }).

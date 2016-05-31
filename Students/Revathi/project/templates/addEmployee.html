@@ -1,24 +1,28 @@
-<label>EmpId:</label>
- <input type="text" ng-model="empid">
+<div class="box">
+ <label>EmpId:</label>
+ <input type="text" ng-model="newEmployee.empId" placeholder="Employee Id">
  <br><br>
  <label>EmpName:</label>
- <input type="text" ng-model="ename">
- <br><br>
+ <input type="text" ng-model="newEmployee.empName" placeholder="Employee Name">
+    <br><br>
 <label>Experience:</label>
- <input type="text" ng-model="experience">
+<input type="text" ng-model="newEmployee.experience" placeholder="Experience">
 <br><br>
 <label>Designation:</label>
-<select name="select designation">
-   <option value="1">Manager</option>
-   <option value="2">Team Lead</option>
+ <select ng-model="newEmployee.desg">
+    <option value="1">Manager</option>
+    <option value="2">Team Lead</option>
     <option value="3">Developer</option>
-</select>
+ </select>
+
 <br><br>
 <label>DOB:</label>
-<input type="date" ng-model="dob">
+<input type="date" ng-model="newEmployee.DOB"/>
  <br><br>
 <label>DOJ:</label>
- <input type="date" ng-model="doj">
+ <input type="date" ng-model="newEmployee.DOJ"/>
 <br><br>
- <button class="btn" ng-click="submit()" type="button">Submit</button>
- <button class="btn" ng-click="reset()" type="button">Reset</button>
+ <button class="btn" ng-click="createNewEmployee()" class="btn btn-primary">Submit</button>
+ <button type="button" ng-click="reset()" class="btn btn-primary">Reset</button>
+        {{newEmployee | json}}
+</div>

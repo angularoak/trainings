@@ -1,34 +1,35 @@
-<label>ProjectName:</label>
- <input type="text" ng-model="projname">
+
+<div class="box">
+<label>Project Name:</label>
+ <input type="text" ng-model="newProject.name" placeholder="Project name">
  <br><br>
 <label>Manager:</label>
-<select name="select manager">
-   <option value="1">Manager1</option>
-   <option value="2">Manager2</option>
-</select>
+ <select ng-model="newProject.manager">
+ <option value="">-Select Manager-</option>
+<option ng-repeat="employee in employees" value={{employee.empName}} 
+    ng-if="employee.desg=='1'">{{employee.empName}}</option>
+ </select>
 <br><br>
 <label>Team Lead:</label>
-<select name="select lead">
-   <option value="1">teamlead1</option>
-   <option value="2">teamlead2</option>
+<select ng-model="newProject.teamlead">
+<option value="">-Select TL-</option>
+<option ng-repeat="employee in employees" value={{employee.empName}} 
+    ng-if="employee.desg=='2'">{{employee.empName}}</option>
 </select>
 <br><br>
 <label>Team Members:</label>
-<select name="select member">
-   <option value="1">employee1</option>
-   <option value="2">employee2</option>
-   <option value="3">employee3</option>
-   <option value="4">employee4</option>
+<select multiple ng-model="newProject.teamMembers">
+<option ng-repeat="employee in employees" value={{employee}} 
+    ng-if="employee.desg=='3'">{{employee.empName}}</option>
 </select>
 <br><br>
 <label>Technologies:</label>
-<select name="select tech">
-   <option value="1">Java 1.6</option>
-   <option value="2">.Net 4.6</option>
-   <option value="3">Oracle 10g</option>
-   <option value="4">Java 1.7</option>
-    <option value="4">AngularJs 1.8</option>
+<select multiple ng-model="newProject.technologies">
+<option ng-repeat="tech in technologies" value={{tech}}>{{tech.name}}</option>
 </select>
 <br><br>
- <button class="btn" ng-click="submit()" type="button">Submit</button>
- <button class="btn" ng-click="reset()" type="button">Reset</button>
+  <button type="button" ng-click="createNewProject()" class="btn btn-primary">Submit</button>
+        <button type="button" ng-click="reset()" class="btn btn-primary">Reset</button>
+        {{newProject | json}}
+</div>
+    
