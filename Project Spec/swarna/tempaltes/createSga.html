@@ -1,33 +1,20 @@
 <div class="panel panel-default">
     <div class="panel-body">
-        <lable> project:</lable>
-        <select ng-model="selectedProject">
-        <option ng-repeat="project in projects"  value={{project}}>{{project.projname}}</option>
+        <lable> Project:</lable>
+    
+        <select class="dropdown" ng-model="selectedProject">
+            <option ng-repeat="project in projects"  value={{project}}>{{project.projname | uppercase}}</option>
         </select>
-        <button type="button"ng-click="genarate()" class="btn btn-primary">genarate</button>
-        <div class="panel panel-default">
+        <button type="button"ng-click="genarate()" class="btn btn-primary">Genarate</button>
+        <div class="panel panel-default" ng-show="projectInfo">
             <div class="panel-body">
-                <style>
-                    table {
-                        border-collapse: collapse;
-                        height: 25%;
-                        width: 25%;
-                    }
-                    
-                    th,
-                    td {
-                        padding: 1px;
-                        text-align: left;
-                        border-spacing: 1px solid #ddd;
-                    }
-                </style>
 
 
-                <table>
+                <table class="table table-hover table-bordered table-responsive" >
                     <tr>
                         <th>Employee Name </th>
-                        <th ng-repeat="tech in projectInfo.teamMembers[0].skillAnalysis">{{tech.techName}}</th>
-                       
+                        <th ng-repeat="tech in projectInfo.teamMembers[0].skillAnalysis">{{tech.techName | uppercase}}</th>
+
                     </tr>
 
                     <tr  ng-repeat="employee in projectInfo.teamMembers">
@@ -41,13 +28,11 @@
                         </td>
                     </tr>
 
-                   
+
                 </table>
             </div>
+        <button class="btn" ng-click="saveSGA()" class="pull-right" type="button">Save or update</button>
         </div>
 
-        <br>
-        <br>
-        <button class="btn" ng-click="saveSGA()" type="button">Save or update</button>
     </div>
 </div>

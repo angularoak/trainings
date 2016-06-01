@@ -11,13 +11,37 @@
                 "version": "1.7",
                 "skilllevel": "1"
             }, {
-                "techName": "AngularJS",
+                "techName": "Angular JS",
                 "version": "1.8",
                 "skilllevel": "1"
             }, {
-                "techName": "Java",
+                "techName": "BackBone Js",
+                "version": "1.7",
+                "skilllevel": "3"
+            }, {
+                "techName": ".Net",
                 "version": "1.7",
                 "skilllevel": "1"
+            }, {
+                "techName": "Hadoop",
+                "version": "1.7",
+                "skilllevel": "2"
+            }, {
+                "techName": "BootStrap",
+                "version": "1.7",
+                "skilllevel": "3"
+            }, {
+                "techName": "HTML",
+                "version": "1.7",
+                "skilllevel": "1"
+            }, {
+                "techName": "CSS",
+                "version": "1.7",
+                "skilllevel": "3"
+            }, {
+                "techName": "JS",
+                "version": "1.7",
+                "skilllevel": "2"
             }]
         }, {
             "empId": "102",
@@ -33,9 +57,33 @@
                 "version": "1.8",
                 "skilllevel": "1"
             }, {
-                "techName": "Java",
+                "techName": "BackBone Js",
                 "version": "1.7",
                 "skilllevel": "3"
+            }, {
+                "techName": ".Net",
+                "version": "1.7",
+                "skilllevel": "2"
+            }, {
+                "techName": "Hadoop",
+                "version": "1.7",
+                "skilllevel": "3"
+            }, {
+                "techName": "BootStrap",
+                "version": "1.7",
+                "skilllevel": "1"
+            }, {
+                "techName": "HTML",
+                "version": "1.7",
+                "skilllevel": "3"
+            }, {
+                "techName": "CSS",
+                "version": "1.7",
+                "skilllevel": "1"
+            }, {
+                "techName": "JS",
+                "version": "1.7",
+                "skilllevel": "2"
             }]
         }, {
             "empId": "103",
@@ -50,11 +98,35 @@
                     "techName": "AngularJS",
                     "version": "1.8",
                     "skilllevel": "3"
-                }, {
-                    "techName": "Java",
-                    "version": "1.7",
-                    "skilllevel": "2"
-                }
+                },  {
+                "techName": "BackBone Js",
+                "version": "1.7",
+                "skilllevel": "3"
+            }, {
+                "techName": ".Net",
+                "version": "1.7",
+                "skilllevel": "1"
+            }, {
+                "techName": "Hadoop",
+                "version": "1.7",
+                "skilllevel": "2"
+            }, {
+                "techName": "BootStrap",
+                "version": "1.7",
+                "skilllevel": "3"
+            }, {
+                "techName": "HTML",
+                "version": "1.7",
+                "skilllevel": "1"
+            }, {
+                "techName": "CSS",
+                "version": "1.7",
+                "skilllevel": "2"
+            }, {
+                "techName": "JS",
+                "version": "1.7",
+                "skilllevel": "3"
+            }
 
             ]
         }]
