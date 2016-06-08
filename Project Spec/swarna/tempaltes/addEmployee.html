@@ -1,9 +1,5 @@
 <div class="panel panel-default">
     <div class="panel-body">
-        <label>Emp id:</label>
-        <input type="text" ng-model="newEmployee.empId" placeholder="Emp id">
-        <br>
-
         <label>Emp name:</label>
         <input type="text" ng-model="newEmployee.empName" placeholder="Emp Name">
         <br>
@@ -18,12 +14,17 @@
         </select>
         <br>
         <label>DOB:</label>
-        <input type="date" id="date" ng-model="newEmployee.DOB" />
+        <input class="datepicker" ng-model="newEmployee.DOB" />
         <br>
         <label>Date of join:</label>
-        <input type="date" id="date" ng-model="newEmployee.DOJ" />
+        <input class="datepicker" ng-model="newEmployee.DOJ" />
         <br>
         <button type="button" ng-click="addEmployee()" class="btn btn-primary">Submit</button>
-        <button type="button"ng-click="reset()" class="btn btn-primary">reset</button>
+        <button type="button" ng-click="reset()" class="btn btn-primary">reset</button>
     </div>
-    </div>
+</div>
+<script>
+    $(function() {
+        $(".datepicker").datepicker();
+    });
+</script>

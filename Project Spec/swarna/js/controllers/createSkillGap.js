@@ -11,7 +11,16 @@ app.controller("createSgaCtrl",function($scope, userDetails, commonServices, $lo
             console.log("Failed to get SGA details");
         }
     })();
-      $scope.projects =  $localStorage.sga;
+     
+    function sucess(responce) {
+        console.log("Suceesfull in getting SGA report data")
+        $scope.projects = responce.data.SkilGapAnalysis;
+    }
+
+    function failure(e) {
+        console.log("Failed to Fetch SGA report data")
+    }
+    commonServices.getSGADetails(sucess, failure);
     $scope.genarate = function(){
         $scope.projectInfo=JSON.parse($scope.selectedProject);
     };

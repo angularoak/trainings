@@ -4,32 +4,33 @@
         height: 140px;
         white-space: nowrap;
     }
-
+    
     th.rotate > div {
-        transform: 
-
-            translate(25px, 80px)
-            rotate(270deg);
+        transform: translate(25px, 80px) rotate(270deg);
         width: 10px;
     }
-
-    .skilllevel1{
+    
+    .skilllevel1 {
         background-color: green;
     }
-    .skilllevel2{
+    
+    .skilllevel2 {
         background-color: yellow;
     }
-    .skilllevel3{
+    
+    .skilllevel3 {
         background-color: red;
     }
-    .projectName{
+    
+    .projectName {
         text-align: center;
         vertical-align: middle !important;
         background-color: #337AB7;
         color: #fff;
         font-size: 1.3pc;
     }
-    .select{
+    
+    .select {
         width: 14pc;
         height: 2pc;
         background-color: #BCBCC7;
@@ -42,39 +43,49 @@
             <lable> <b>Project:</b></lable>
 
             <select class="select" ng-model="selectedProject">
-                <option ng-repeat="project in projects"  value={{project}}>{{project.projname | uppercase}}</option>
+                <option ng-repeat="project in projects" value={{project}}>{{project.projname | uppercase}}</option>
             </select>
-            <button type="button"ng-click="genarate()" class="btn btn-primary">Genarate</button>
+            <button type="button" ng-click="genarate()" class="btn btn-primary">Genarate</button>
         </center>
         <br>
         <div class="panel panel-default" ng-show="projectInfo">
             <div class="panel-body">
 
 
-                <table class="table table-hover table-bordered table-responsive" >
+                <table class="table table-hover table-bordered table-responsive">
                     <tr>
                         <th colspan="3" class="projectName">{{projectInfo.projname |uppercase}}</th>
-                        <th  rowspan='2' class="rotate" ng-repeat="tech in projectInfo.teamMembers[0].skillAnalysis"><div><span>{{tech.techName | uppercase}}</span></div></th>
+                        <th rowspan='2' class="rotate" ng-repeat="tech in projectInfo.teamMembers[0].skillAnalysis">
+                            <div><span>{{tech.techName | uppercase}}</span></div>
+                        </th>
                     </tr>
-                    <th >Employee Name </th>
-                    <th>Project Role </th>
-                    <th>Years of Experience</th>
+                    <tr>
+                        <th>Employee Name </th>
+                        <th>Project Role </th>
+                        <th>Years of Experience</th>
 
                     </tr>
 
-                <tr  ng-repeat="employee in projectInfo.teamMembers">
-                    <td >{{employee.empName}}</td>
-                    <td >{{employee.desg}}</td>
-                    <td >{{employee.experience}}</td>
-                    <td  ng-repeat="tech in employee.skillAnalysis" title="Based in Skill level" class="skilllevel{{tech.skilllevel}}">
+                    <tr ng-repeat="employee in projectInfo.teamMembers">
+                        <td>{{employee.empName}}</td>
+                        <td>{{employee.desg}}</td>
+                        <td>{{employee.experience}}</td>
+                        <td ng-repeat="tech in employee.skillAnalysis" data-toggle="tooltip" title="Skill level {{tech.skilllevel}}" class="skilllevel{{tech.skilllevel}}">
 
-                    </td>
-                </tr>
+                        </td>
+                    </tr>
 
 
                 </table>
+            </div>
         </div>
-    </div>
 
+    </div>
 </div>
-</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>

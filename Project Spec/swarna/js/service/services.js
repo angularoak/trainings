@@ -15,7 +15,7 @@ app.service("userDetails", function ($http, $localStorage) {
 
 app.service("commonServices", function ($http, $localStorage) {
     this.getCurrentEmployeeDetails = function (success, failure) {
-        $http.get("../swarna/js/data/employee.json").then(success, failure);
+        $http.get("	http://localhost:8080/RestProject/restsample/employee").then(success, failure);
     };
     this.getCurrentProjects = function (success, failure) {
         $http.get("../swarna/js/data/projects.json").then(success, failure);
@@ -33,11 +33,9 @@ app.service("commonServices", function ($http, $localStorage) {
         $localStorage.projects.push(newProject);
     };
 
-    this.getEmployeeDetails = function () {
-        return $localStorage.employees;
-    };
-    this.setEmployeeDetails = function (newEmployee) {
-        $localStorage.employees.push(newEmployee);
+    this.createEmployee = function (newEmployee,success,failure) {
+        //$localStorage.employees.push(newEmployee);
+        $http.post("http://localhost:8080/RestProject/restsample/employee",newEmployee).then(success, failure);
     };
     this.getTchnologyDetails = function () {
         return $localStorage.technologies;
